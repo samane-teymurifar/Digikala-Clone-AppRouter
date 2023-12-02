@@ -20,7 +20,7 @@ function StoryItem({ item }: Properties) {
           width="55"
           height="55"
           alt={item.category_title}
-          className="absolute border rounded-full"
+          className="absolut border-secondary-main border-2 rounded-full"
         />
     
 

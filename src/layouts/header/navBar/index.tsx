@@ -36,7 +36,7 @@ function NavBar() {
 
             <SearchIcon />
        
-          <span className="text-sm">{Keywords.chooseLocation}</span>
+          <span className="text-sm text-gray-50">{Keywords.chooseLocation}</span>
         </span>
       </div>
  
