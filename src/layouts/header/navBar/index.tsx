@@ -1,6 +1,7 @@
 import SearchIcon from "@icons/SearchIcon";
 import { Keywords } from "@constants/keyword";
 import { HeaderInfo } from "../data";
+import { isArray } from "@src/utiles/helper/isArray";
 
 
 
@@ -15,7 +16,7 @@ function NavBar() {
           <span className="pl-2 text-sm">{Keywords.productsClassification}</span>
           <span className="h-5 w-[1px] bg-gray-10 mx-3" />
           <nav className="flex gap-6">
-            {HeaderInfo.map((item, key) => (
+            {isArray(HeaderInfo).map((item, key) => (
               <div
                 key={`Header-Item-${key}`}
                 className="flex gap-2 items-center"

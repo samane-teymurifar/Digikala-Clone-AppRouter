@@ -1,29 +1,20 @@
 
+import { HomeTrendingDataType } from "@src/utiles/types/homeTrending";
 import Image from "next/image";
-type Properties = {
-  item: {
-    category_title: string;
-    id: string;
-    images: {
-      main: string
-    };
-  };
-};
-function StoryItem({ item }: Properties) {
-  console.log(item?.images.main);
+
+function StoryItem( item : HomeTrendingDataType) {
   
   return (
-    <span key={item.id} className="flex flex-col items-center">
+    <span key={item.id} className="flex flex-col items-center border border-secondary-main rounded-full">
 
         <Image
-          src={item.images.main}
+          src={item?.images?.main}
           width="55"
           height="55"
           alt={item.category_title}
           className="absolut border-secondary-main border-2 rounded-full"
         />
     
-
       <span className="text-xs font-light">{item.category_title}</span>
     </span>
   );
