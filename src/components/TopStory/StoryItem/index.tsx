@@ -1,21 +1,20 @@
-
 import { HomeTrendingDataType } from "@src/utiles/types/homeTrending";
 import Image from "next/image";
 
 function StoryItem( item : HomeTrendingDataType) {
-  
+  const Item = item.item;
   return (
-    <span key={item.id} className="flex flex-col items-center border border-secondary-main rounded-full">
+    <span key={Item.id} className="flex flex-col items-center border border-secondary-main m-3">
 
         <Image
-          src={item?.images?.main}
+          src={Item?.images?.main && Item?.images?.main}
           width="55"
           height="55"
-          alt={item.category_title}
-          className="absolut border-secondary-main border-2 rounded-full"
+          alt={Item.category_title}
+          className="absolute"
         />
     
-      <span className="text-xs font-light">{item.category_title}</span>
+      <span className="text-xs font-light">{Item.category_title}</span>
     </span>
   );
 }
