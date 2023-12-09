@@ -2,6 +2,7 @@ import { getData } from "./Data/data";
 import StoryItem from "./StoryItem";
 import { HomeTrendingDataType } from "@utiles/types/homeTrending";
 import { isArray } from "@src/utiles/helper/isArray";
+
 async function TopStories() {
     const response = await getData();
     const TopStoriesData = response?.result.trending
@@ -11,7 +12,6 @@ async function TopStories() {
       {isArray(TopStoriesData.products.slice(0,8)).map((item:HomeTrendingDataType) => {
         return (
           <StoryItem key={item.id} item={item}/>
-      
         );
       })}
     </section>
