@@ -17,9 +17,6 @@ type Properties = {
 };
 function SwiperComponent() {
 
-
-    console.log("swiper:", Slides);
-    
   const swiperRef = useRef(null);
   const handleNext = () => {
     if (swiperRef.current !== null) {
@@ -40,7 +37,6 @@ function SwiperComponent() {
         spaceBetween={50}
         slidesPerView={1}
         pagination={{ clickable: false }}
-        onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         autoplay={{
           delay: 2500,

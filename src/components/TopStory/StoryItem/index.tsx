@@ -1,21 +1,33 @@
+'use client'
+import CubeSwiperComponent from "@src/components/CubeSwiper";
 import { HomeTrendingDataType } from "@src/utiles/types/homeTrending";
 import Image from "next/image";
+import { useState } from "react";
+import { createPortal } from "react-dom";
 
-function StoryItem( item : HomeTrendingDataType) {
-  const Item = item.item;
+function StoryItem( {item,TopStoriesData}:{item : HomeTrendingDataType, TopStoriesData: any}) {
+  const Item = item;
+  const [viewStory, setViewStory] = useState(false);
+  const HandleViewStoryItem = () => {
+    setViewStory(true);
+  }
+
+  console.log("TopStoriesData samane",TopStoriesData);
+  
   return (
-    <span key={Item.id} className="flex flex-col items-center border border-secondary-main m-3">
-
-        <Image
-          src={Item?.images?.main && Item?.images?.main}
-          width="55"
-          height="55"
-          alt={Item.category_title}
-          className="absolute"
-        />
-    
-      <span className="text-xs font-light">{Item.category_title}</span>
-    </span>
+    <>
+      <div key={Item.id} className="flex flex-col items-center" onClick={HandleViewStoryItem}>
+          <Image
+            src={Item?.images?.main && Item?.images?.main}
+            width="80"
+            height="80"
+            alt={Item.category_title}
+            className={`${viewStory ? `border-secondary-main` :`border-primary-main` }  rounded-full border-[3px]`}
+          />
+          <div className="text-xs font-light mt-2 w-32 text-center">{Item.category_title}</div>
+    </div>
+    {viewStory && createPortal(<CubeSwiperComponent Slides={TopStoriesData}/>,document.body)}
+    </>
   );
 }
 
