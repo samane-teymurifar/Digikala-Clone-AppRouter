@@ -13,7 +13,7 @@ function NavBar() {
 
         <SearchIcon/>
           </span>
-          <span className="pl-2 text-sm">{Keywords.productsClassification}</span>
+          <span className="pl-2 text-sm text-gray-90">{Keywords.productsClassification}</span>
           <span className="h-5 w-[1px] bg-gray-10 mx-3" />
           <nav className="flex gap-6">
             {isArray(HeaderInfo).map((item, key) => (

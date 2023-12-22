@@ -29,9 +29,9 @@ function TopHeader() {
         <div>
           <SearchIcon />
         </div>
-        <span className="text-xs">{Keywords.login}</span>
+        <span className="text-xs text-gray-90">{Keywords.login}</span>
         <span>|</span>
-        <span className="text-xs">{Keywords.sigUp}</span>
+        <span className="text-xs text-gray-90">{Keywords.sigUp}</span>
       </button>
       <span className="h-5 w-[1px] bg-gray-10 mx-3" />
       <SearchIcon />
