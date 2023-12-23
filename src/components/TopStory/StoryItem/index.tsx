@@ -24,7 +24,7 @@ function StoryItem( {item,TopStoriesData}:{item : HomeTrendingDataType, TopStori
             alt={Item.category_title}
             className={`${viewStory ? `border-secondary-main` :`border-primary-main` }  rounded-full border-[3px]`}
           />
-          <div className="text-xs font-light mt-2 w-32 text-center">{Item.category_title}</div>
+          <div className="text-xs font-light mt-2 w-32 text-center text-gray-60">{Item.category_title}</div>
     </div>
     {viewStory && createPortal(<CubeSwiperComponent Slides={TopStoriesData}/>,document.body)}
     </>
