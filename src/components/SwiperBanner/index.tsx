@@ -42,6 +42,7 @@ function SwiperComponent() {
           delay: 2500,
           disableOnInteraction: true,
         }}
+        style={{'position': 'relative'}}
       >
         {Slides?.map((slide) => (
           <SwiperSlide key={slide?.src}>
@@ -55,7 +56,7 @@ function SwiperComponent() {
             />
           </SwiperSlide>
         ))}
-        <div className="">
+        <div className="absolute bottom-5 right-5 z-10 gap-2 flex">
           <button
             className="bg-gray-5 border border-gray-20 w-[38px] h-[38px] rounded-full rotate-90 cursor-pointer"
             onClick={handlePrev}

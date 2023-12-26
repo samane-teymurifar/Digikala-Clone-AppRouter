@@ -12,8 +12,6 @@ function StoryItem( {item,TopStoriesData}:{item : HomeTrendingDataType, TopStori
     setViewStory(true);
   }
 
-  console.log("TopStoriesData samane",TopStoriesData);
-  
   return (
     <>
       <div key={Item.id} className="flex flex-col items-center" onClick={HandleViewStoryItem}>
