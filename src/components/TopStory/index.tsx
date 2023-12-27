@@ -5,7 +5,7 @@ import { isArray } from "@src/utiles/helper/isArray";
 
 async function TopStories() {
     const response = await getData();
-    const TopStoriesData = (response?.result?.trending).products.slice(0,8)
+    const TopStoriesData = (response?.result?.trending)?.products.slice(0,8)
  
     return (
     <section className="w-full bg-common-white py-4 flex justify-center my-6 gap-[50px]">
