@@ -9,12 +9,15 @@ import { isArray } from "@src/utiles/helper/isArray";
     title: string;
  }
     return (
-    <section className="w-full bg-common-white py-4 flex justify-center my-6 gap-[50px]">
+    <section className="px-96">
+      <div className="w-full bg-common-white py-4 flex justify-between my-6 gap-[50px]">
+
       {isArray(BottomStoryData).map((item:BottomStoriesItemType) => {
         return (
           <BotomStoryItem key={item.src} item={item}/>
         );
       })}
+      </div>
     </section>
   );
 }

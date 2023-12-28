@@ -11,12 +11,12 @@ item:{
  
 };
 function BotomStoryItem({item} : Properties) {
-console.log("item", item);
+
 
   return (
-    <div className="flex flex-col justify-center items-center">
-        <Image src={item.src} width={24} height={24} alt={item.title}/>
-        <p>{item.title}</p>
+    <div className="flex flex-col justify-center items-center gap-2">
+        <Image src={item.src} width={52} height={52} alt={item.title}/>
+        <p className="text-xs">{item.title}</p>
     </div>
   );
 }
