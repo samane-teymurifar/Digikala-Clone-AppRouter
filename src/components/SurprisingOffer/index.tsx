@@ -1,4 +1,4 @@
-
+'use client'
 import { getData } from "./Data/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -12,10 +12,7 @@ import SurprisingOfferCard from "./SurprisingOfferCard";
 import { isArray } from "@src/utiles/helper/isArray";
 async function SurprisingOffer() {
     const response = await getData();
-    const surprisingOffersProducts =  response?.result?.selling_and_sales?.products;
-    console.log("surprisingOffersProducts:", surprisingOffersProducts);
-    
-    
+    const surprisingOffersProducts =  response?.result?.selling_and_sales?.products; 
  return (
     <section className="w-full px-48">
         <div className="w-full bg-primary-main h-[300px] rounded-2xl">
@@ -35,7 +32,6 @@ async function SurprisingOffer() {
                 {isArray(surprisingOffersProducts)?.map((product) => (
                 <SwiperSlide key={product?.id} style={{'width': '182px', 'marginLeft': '2px'}}>
                     <SurprisingOfferCard product={product}/>
-                    ll
                 </SwiperSlide>
                 ))}
                 <div className="absolute bottom-5 right-5 z-10 gap-2 flex">
