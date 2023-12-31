@@ -16,4 +16,5 @@ export enum Keywords {
     topSales5 = "",
     topSales6 = "",
     topSales7 = "",
+    offTo59 = "تا ۵۹٪ تخفیف",
   }
