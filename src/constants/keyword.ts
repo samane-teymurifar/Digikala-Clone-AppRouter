@@ -16,6 +16,7 @@ export enum Keywords {
     topSales5 = "",
     topSales6 = "",
     topSales7 = "",
+    toman = "تومان",
     offTo59 = "تا ۵۹٪ تخفیف",
     moreThan100Product = "بیش از ۱۰۰ کالا",
     buyBaseOnClasification = "خرید بر اساس دسته بندی",

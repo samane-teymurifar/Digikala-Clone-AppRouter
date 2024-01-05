@@ -25,7 +25,8 @@
       "@icons/*": ["./src/assets/icons/*"],
       "@images/*": ["./src/assets/images/*"],
       "@app/*": ["./src/app/*"],
-      "@utiles/*": ["./src/utiles/*"]
+      "@utiles/*": ["./src/utiles/*"],
+      "@data/*": ["./src/data/Home/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
