@@ -3,7 +3,6 @@ import { getData } from "./Data/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
-  Pagination,
   Scrollbar,
   A11y,
   Autoplay,
@@ -25,16 +24,16 @@ async function SurprisingOffer() {
         <div className="w-full bg-primary-main h-[300px] rounded-2xl">
             <div className="py-4 h-full">
                 <Swiper
-                    modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                    modules={[Navigation, Scrollbar, A11y, Autoplay]}
                     spaceBetween={2}
                     slidesPerView={7}
-                    pagination={{ clickable: false }}
+                    // pagination={{ clickable: false }}
                     // onSwiper={(swiper) => (swiperRef.current = swiper)}
                     // autoplay={{
                     // delay: 2500,
                     // disableOnInteraction: true,
                     // }}
-                    style={{'height': '100%'}}
+                    style={{'height': '100%', 'marginRight': '200px'}}
                 >
                 {isArray(surprisingOffersProducts?.products)?.map((product) => (
                 <SwiperSlide key={product?.id}>
