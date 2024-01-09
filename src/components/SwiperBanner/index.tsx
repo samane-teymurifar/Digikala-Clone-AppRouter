@@ -20,13 +20,13 @@ function SwiperComponent() {
   const swiperRef = useRef(null);
   const handleNext = () => {
     if (swiperRef.current !== null) {
-      swiperRef.current.slideNext();
+      // swiperRef.current.slideNext();
     }
   };
 
   const handlePrev = () => {
     if (swiperRef.current !== null) {
-      swiperRef.current.slidePrev();
+      // swiperRef.current.slidePrev();
     }
   };
 
@@ -37,12 +37,12 @@ function SwiperComponent() {
         spaceBetween={50}
         slidesPerView={1}
         pagination={{ clickable: false }}
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        // onSwiper={(swiper) => (swiperRef.current = swiper)}
         autoplay={{
           delay: 2500,
           disableOnInteraction: true,
         }}
-        style={{'position': 'relative'}}
+        style={{'position': 'relative', 'marginLeft': '2px'}}
       >
         {Slides?.map((slide) => (
           <SwiperSlide key={slide?.src}>

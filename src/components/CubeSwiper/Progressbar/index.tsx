@@ -14,7 +14,7 @@ const StoryProgressBar = ({ initialWidth }: Properties) => {
         clearInterval(interval);
       } else {
         width++;
-        progressBarRef.current.style.width = `${width}%`;
+        // progressBarRef && progressBarRef?.current?.style?.width = `${width}%`
       }
     }
 

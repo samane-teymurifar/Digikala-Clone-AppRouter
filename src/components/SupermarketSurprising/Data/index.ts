@@ -12,5 +12,9 @@ type SupermarketSurprisingDataType = {
       title: "شگفت انکیز سوپرمارکتی",
       src: "https://www.digikala.com/statics/img/svg/typography/fresh.svg",
     },
+    {
+      title: "background",
+      src: "https://www.digikala.com/statics/img/svg/typography/freshPattern.svg",
+    }
   ];
   export default SupermarketSurprisingData;

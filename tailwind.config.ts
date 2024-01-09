@@ -83,6 +83,7 @@ const config: Config = {
         80: '#303034',
         90: '#1B1B1F'
       },
+      surprisingSupermarket: '#feffff',
     }
   },
   plugins: [],

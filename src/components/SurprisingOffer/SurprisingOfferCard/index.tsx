@@ -8,8 +8,7 @@ type properties = {
     product: any;  
 }
 function SurprisingOfferCard({product}: properties) {
-    console.log("product:", product?.price);
-    
+
     return (
 
             <div className="bg-common-white px-4 py-3 h-full cursor-pointer">

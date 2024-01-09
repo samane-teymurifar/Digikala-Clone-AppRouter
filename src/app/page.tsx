@@ -6,10 +6,10 @@ import TopStories from "@src/components/TopStory";
 export default function Home() {
   return (
     <main>
-      {/* <TopStories/> */}
+      {/* <TopStories/>
       <SwiperComponent/>
       <BottomStories/>
-      <SurprisingOffer/>
+      <SurprisingOffer/> */}
     </main>
   )
 }
