@@ -1,3 +1,4 @@
+import BazarcheCards from "@src/components/Bazarche";
 import BottomStories from "@src/components/BottomStory";
 import SurprisingSupermarket from "@src/components/SupermarketSurprising";
 import SurprisingOffer from "@src/components/SurprisingOffer";
@@ -12,6 +13,7 @@ export default function Home() {
       <BottomStories/>
       <SurprisingOffer/>
       <SurprisingSupermarket/>
+      <BazarcheCards/>
     </main>
   )
 }

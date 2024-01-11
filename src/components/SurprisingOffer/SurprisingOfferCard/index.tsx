@@ -15,7 +15,7 @@ function SurprisingOfferCard({product}: properties) {
                 <Image src={product?.images?.main} width={150} height={150} alt={product?.title_en}/>
                 <span className="flex-col w-full"> 
                 <div className="flex justify-between gap-2 pt-2">
-                <div className="text-xs bg-primary-main rounded-3xl w-9 h-5 text-center flex items-center justify-center">2%</div>
+                <div className="text-xs bg-primary-main  text-common-white rounded-3xl w-9 h-5 text-center flex items-center justify-center">2%</div>
                 <div className="flex gap-1 items-center">
                     <div className="text-gray-90 text-sm">
                     {product?.price.rrp_price}
