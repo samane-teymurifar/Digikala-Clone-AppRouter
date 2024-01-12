@@ -10,8 +10,7 @@ import {
 import SurprisingOfferCard from "../SurprisingOfferCard/index";
 import { isArray } from "@src/utiles/helper/isArray";
 function SurprisingOfferCards(surprisingOffersProducts: any) {
-    console.log("surprisingOffersProducts:", surprisingOffersProducts);
-    
+  
  return (
 
                 <Swiper

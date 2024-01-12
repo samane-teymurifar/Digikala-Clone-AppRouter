@@ -7,8 +7,7 @@ import SurprisingSupermarketCard from "./SurprisingSupermarketCard";
 import {SupermarketSurprisingCardDataType} from "./Type/index";
 import SearchIcon from "@src/assets/icons/SearchIcon";
 async function SurprisingSupermarket() {
-    // console.log("SupermarketSurprisingData:", SupermarketSurprisingData);
-    
+ 
  return (
     <section className="h-fit bg-surprisingSupermarket flex justify-between mx-48 mt-4 py-6 px-12 rounded-lg">
       <div className="flex items-center justify-between gap-4">
