@@ -1951,4 +1951,5 @@ const ClacificationJson = {
         }
       ]
     }
-  }
+}
+export default ClacificationJson;

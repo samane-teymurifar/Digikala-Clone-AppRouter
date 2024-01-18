@@ -1,20 +1,26 @@
-// import { getData } from "./Data/data";
-// import StoryItem from "./StoryItem";
-import { HomeTrendingDataType } from "@utiles/types/homeTrending";
+import ClacificationJson from "../../data/ClassificationData/classificationData";
 import { isArray } from "@src/utiles/helper/isArray";
-import { Keyboard } from "swiper/modules";
 import { Keywords } from "@src/constants/keyword";
-
-async function Clacification() {
-    // const response = await getData();
-    // const TopStoriesData = (response?.result?.trending)?.products.slice(0,8)
-    
+import { CategoryType } from "./Type";
+import Image from "next/image";
+function Clacification() {
+    const response = ClacificationJson
+    const ClassificationProducts = (response?.result?.widgets)?.slice(0,13)
     return (
-    <section className="w-full bg-common-white py-6 flex justify-center my-6 gap-[50px]">
-        <span className="text-lg text-common-black">
+    <section className="w-full bg-common-white py-6 flex flex-col justify-center my-6 gap-[50px]">
+        <span className="text-xl text-center text-common-black">
         {Keywords.buyBaseOnClasification}
-
         </span>
+        <section className="flex flex-wrap justify-center mx-48 gap-y-6 gap-x-8"> 
+        {isArray(ClassificationProducts).map((Category:CategoryType) => {
+        return (
+          <div className="flex gap-y-4 flex-col items-center w-40">
+          <Image src={Category.data.child[0].top_product_image} width={100} height={100} alt={Category.data.title}/>
+          <span className="text-common-black text-xs">{Category.data.title}</span>
+          </div>
+        );
+        })} 
+        </section>
     </section>
   );
 }
