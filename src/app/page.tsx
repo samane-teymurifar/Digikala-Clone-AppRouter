@@ -1,4 +1,5 @@
 import BazarcheCards from "@src/components/Bazarche";
+import BottomAds from "@src/components/BottomAds";
 import BottomStories from "@src/components/BottomStory";
 import Clacification from "@src/components/Clacification";
 import SurprisingSupermarket from "@src/components/SupermarketSurprising";
@@ -16,6 +17,7 @@ export default function Home() {
       {/* <SurprisingSupermarket/> */}
       {/* <BazarcheCards/> */}
       <Clacification/>
+      <BottomAds/>
     </main>
   )
 }
