@@ -2,8 +2,7 @@ import { isArray } from "@src/utiles/helper/isArray";
 import AdsData from "./Data/index";
 import { AdsDataType} from "./Type/index";
 import Image from "next/image";
-
-function BottomAds() {
+ function BottomAds() {
     const AddsCardsArray = AdsData;
     return (
         <div className="grid grid-cols-2 gap-3  mx-48 mt-4">
