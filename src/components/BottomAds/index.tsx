@@ -6,9 +6,9 @@ import Image from "next/image";
     const AddsCardsArray = AdsData;
     return (
         <div className="grid grid-cols-2 gap-3  mx-48 mt-4">
-        {isArray(AddsCardsArray).map((item:AdsDataType) => {
+        {isArray(AddsCardsArray).map((BottomAdsCard:AdsDataType , index) => {
         return (
-          <Image src={item.src} alt={item.alt} width={700} height={200} className="rounded-2xl"/>
+          <Image src={BottomAdsCard.src} alt={BottomAdsCard.alt} width={700} height={200} className="rounded-2xl" key={`${index}-BottomAdsCard`}/>
         );
         })}       
       </div>
