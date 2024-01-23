@@ -21,5 +21,6 @@ export enum Keywords {
     moreThan100Product = "بیش از ۱۰۰ کالا",
     buyBaseOnClasification = "خرید بر اساس دسته بندی",
     surprisingOffer = 'پیشنهاد شگفت انگیز',
-    digikalaOffer = 'پیشنهاد دیجی کالا'
+    digikalaOffer = 'پیشنهاد دیجی کالا',
+    PopularBrands = 'محبوب ترین برند ها'
   }
