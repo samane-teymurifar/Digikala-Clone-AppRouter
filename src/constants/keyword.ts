@@ -25,4 +25,8 @@ export enum Keywords {
     PopularBrands = 'محبوب ترین برند ها',
     BaseOnYourVisit = 'بر اساس بازدید های شما',
     Visit = 'مشاهده',
+    ForDigiPlusMembers = 'خدمت ویژه برای اعضای دیجی‌پلاس',
+    Membership = 'عضویت',
+    FreeDelivery = 'ارسال فوری رایگان',
+    seeAll = "مشاهده همه"
   }

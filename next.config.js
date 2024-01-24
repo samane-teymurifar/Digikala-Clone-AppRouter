@@ -7,6 +7,10 @@ const nextConfig = {
           protocol: "https",
           hostname: "dkstatics-public.digikala.com/**",
         },
+        {
+          protocol: "https",
+          hostname: "https://www.digikala.com/**",
+        }
       ],
     },
   };
