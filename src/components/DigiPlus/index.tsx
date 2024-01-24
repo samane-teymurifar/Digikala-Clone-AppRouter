@@ -13,7 +13,7 @@ function Digiplus() {
                 <div className="m-4">
                     <div className="flex flex-col justify-between">
                         <div className="flex flex-col gap-2 m-8">
-                        <Image src={'https://www.digikala.com/statics/img/svg/digiplus-logo.svg'} width={128} height={32} alt=""/>
+                        <Image src={'https://www.digikala.com/statics/img/svg/digiplus-logo.svg'} width={128} height={32} alt="Digiplus"/>
                         <div className="text-sm text-common-white">{Keywords.ForDigiPlusMembers}</div>
                         <button className="text-sm text-common-white flex border border-common-white rounded-md w-fit py-2 px-3 gap-2">
                             <span>{Keywords.Membership}</span>

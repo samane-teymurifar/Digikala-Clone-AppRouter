@@ -12,6 +12,7 @@ import AdsData from "@src/components/BottomAds/Data/index"
 import AdsData2 from "@src/components/Ads3/Data/index";
 import ComputerAccessories from "@src/components/ComputerComponent";
 import Digiplus from "@src/components/DigiPlus";
+import DigiClub from "@src/components/DigiClub";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <BottomAds data={AdsData2}/>
       <ComputerAccessories/>
       <Digiplus/>
+      <DigiClub/>
     </main>
   )
 }
