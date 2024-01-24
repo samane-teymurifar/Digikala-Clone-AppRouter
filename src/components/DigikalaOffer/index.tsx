@@ -6,7 +6,7 @@ import Image from "next/image";
 function DigikalaOffer() {
     const DigikalaOfferData = someJson.result.home_8.products
     const NumberedDigikalaOfferData = (DigikalaOfferData.slice(0,7)).concat(DigikalaOfferData.slice(0,7))
-    console.log("NumberedDigikalaOfferData", NumberedDigikalaOfferData);
+
     
     return (
     <section className="mt-6 mx-48">

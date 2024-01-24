@@ -1,9 +1,7 @@
 import Image from "next/image";
 import { SupermarketSurprisingDataType } from "../Type/index";
 function SurprisingSupermarketCard({cardData}: SupermarketSurprisingDataType) {
-
-console.log("cardData", cardData);
-    
+   
  return (
     <div className="relative"> 
         <Image src={cardData.src} alt={cardData.title} width={72} height={72} style={{'borderRadius': "100%"}}/>

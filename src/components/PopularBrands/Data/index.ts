@@ -3,7 +3,7 @@ type PopularBrandsDataType = {
     src: string;
   };
   
-  const PopularBrands: PopularBrandsDataType[] = [
+  const PopularBrandsData: PopularBrandsDataType[] = [
     {
       title: "پریل",
       src: "https://dkstatics-public.digikala.com/digikala-brands/2c36ceb629598fa31b9b321fcd4e47773bd93ef7_1649498016.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80",
@@ -50,4 +50,4 @@ type PopularBrandsDataType = {
     },
     
   ];
-  export default PopularBrands;
+  export default PopularBrandsData;

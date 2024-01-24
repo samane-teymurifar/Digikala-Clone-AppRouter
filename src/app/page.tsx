@@ -3,6 +3,7 @@ import BottomAds from "@src/components/BottomAds";
 import BottomStories from "@src/components/BottomStory";
 import Clacification from "@src/components/Clacification";
 import DigikalaOffer from "@src/components/DigikalaOffer";
+import PopularBBrands from "@src/components/PopularBrands";
 import SurprisingSupermarket from "@src/components/SupermarketSurprising";
 import SurprisingOffer from "@src/components/SurprisingOffer";
 import SwiperComponent from "@src/components/SwiperBanner";
@@ -17,9 +18,10 @@ export default function Home() {
       {/* <SurprisingOffer/> */}
       {/* <SurprisingSupermarket/> */}
       {/* <BazarcheCards/> */}
-      <Clacification/>
-      <BottomAds/>
-      <DigikalaOffer/>
+      {/* <Clacification/> */}
+      {/* <BottomAds/> */}
+      {/* <DigikalaOffer/> */}
+      {/* <PopularBBrands/> */}
     </main>
   )
 }
