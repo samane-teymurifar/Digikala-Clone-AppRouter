@@ -1,20 +1,9 @@
 import { isArray } from "@src/utiles/helper/isArray";
-import someJson from "../../data/HomeData/content";
 import Image from "next/image";
 import { Keywords } from "@src/constants/keyword";
 import SearchIcon from "@src/assets/icons/SearchIcon";
-function ComputerAccessories() {
-    const ComputerAccessoriesMobilePhone = someJson.result.home_1.products
-    const ComputerAccessoriesCellPhonePouchCover = someJson.result.home_2.products
-    const ComputerAccessoriesHeadphone = someJson.result.home_3.products
-    const ComputerAccessoriesSmartWatch = someJson.result.home_4.products
+function ComputerAccessories({SuitableData}: any) {
 
-    const SuitableData = [ 
-        {title: someJson.result.home_1.title , products: ComputerAccessoriesMobilePhone},
-        {title: someJson.result.home_2.title , products: ComputerAccessoriesCellPhonePouchCover},
-        {title: someJson.result.home_3.title , products: ComputerAccessoriesHeadphone}, 
-        {title: someJson.result.home_4.title , products: ComputerAccessoriesSmartWatch}, 
-    ]
 
     return (
     <section className="grid grid-cols-4 mx-48 mt-4 border border-gray-10 rounded-2xl">

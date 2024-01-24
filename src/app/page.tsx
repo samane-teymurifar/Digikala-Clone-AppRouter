@@ -13,8 +13,35 @@ import AdsData2 from "@src/components/Ads3/Data/index";
 import ComputerAccessories from "@src/components/ComputerComponent";
 import Digiplus from "@src/components/DigiPlus";
 import DigiClub from "@src/components/DigiClub";
+import someJson from "@src/data/HomeData/content";
 
 export default function Home() {
+
+  const ComputerAccessoriesMobilePhone = someJson.result.home_1.products
+  const ComputerAccessoriesCellPhonePouchCover = someJson.result.home_2.products
+  const ComputerAccessoriesHeadphone = someJson.result.home_3.products
+  const ComputerAccessoriesSmartWatch = someJson.result.home_4.products
+
+  const SuitableData = [ 
+      {title: someJson.result.home_1.title , products: ComputerAccessoriesMobilePhone},
+      {title: someJson.result.home_2.title , products: ComputerAccessoriesCellPhonePouchCover},
+      {title: someJson.result.home_3.title , products: ComputerAccessoriesHeadphone}, 
+      {title: someJson.result.home_4.title , products: ComputerAccessoriesSmartWatch}, 
+  ]
+
+
+  const notebookNetbookUltrabook = someJson.result.home_5.products
+  const inCarAccessories = someJson.result.home_6.products
+  const medicalSupplement = someJson.result.home_7.products
+  const speaker = someJson.result.home_8.products
+
+  const SuitableData2 = [ 
+      {title: someJson.result.home_5.title , products: notebookNetbookUltrabook},
+      {title: someJson.result.home_6.title , products: inCarAccessories},
+      {title: someJson.result.home_7.title , products: medicalSupplement}, 
+      {title: someJson.result.home_8.title , products: speaker}, 
+  ]
+  
   return (
     <main>
       {/* <TopStories/> */}
@@ -28,9 +55,11 @@ export default function Home() {
       {/* <DigikalaOffer/> */}
       {/* <PopularBBrands/> */}
       <BottomAds data={AdsData2}/>
-      <ComputerAccessories/>
+      <ComputerAccessories SuitableData={SuitableData}/>
       <Digiplus/>
       <DigiClub/>
+      <ComputerAccessories SuitableData={SuitableData2}/>
+
     </main>
   )
 }

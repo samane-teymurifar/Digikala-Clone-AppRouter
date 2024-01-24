@@ -28,5 +28,6 @@ export enum Keywords {
     ForDigiPlusMembers = 'خدمت ویژه برای اعضای دیجی‌پلاس',
     Membership = 'عضویت',
     FreeDelivery = 'ارسال فوری رایگان',
-    seeAll = "مشاهده همه"
+    seeAll = "مشاهده همه",
+    YourPoint = "امتیاز شما"
   }
