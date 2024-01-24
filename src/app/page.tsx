@@ -8,6 +8,9 @@ import SurprisingSupermarket from "@src/components/SupermarketSurprising";
 import SurprisingOffer from "@src/components/SurprisingOffer";
 import SwiperComponent from "@src/components/SwiperBanner";
 import TopStories from "@src/components/TopStory";
+import AdsData from "@src/components/BottomAds/Data/index"
+import AdsData2 from "@src/components/Ads3/Data/index";
+import ComputerAccessories from "@src/components/ComputerComponent";
 
 export default function Home() {
   return (
@@ -19,9 +22,11 @@ export default function Home() {
       {/* <SurprisingSupermarket/> */}
       {/* <BazarcheCards/> */}
       {/* <Clacification/> */}
-      {/* <BottomAds/> */}
+      {/* <BottomAds data={AdsData}/> */}
       {/* <DigikalaOffer/> */}
       {/* <PopularBBrands/> */}
+      <BottomAds data={AdsData2}/>
+      <ComputerAccessories/>
     </main>
   )
 }

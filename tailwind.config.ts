@@ -85,6 +85,7 @@ const config: Config = {
       },
       surprisingSupermarket: '#edefed',
       offTo59Color : '#39ae00',
+
     }
   },
   plugins: [],

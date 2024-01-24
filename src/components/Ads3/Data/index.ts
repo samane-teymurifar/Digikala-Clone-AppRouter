@@ -1,7 +1,7 @@
 import { AdsDataType } from "../Type";
 
 
-  const AdsData: AdsDataType[] = [
+  const AdsData2: AdsDataType[] = [
     {
       id: "1",
       src: "https://dkstatics-public.digikala.com/digikala-adservice-banners/2868645aeeea88e39faef0ee16ce1e47e15ebada_1705238744.jpg?x-oss-process=image/quality,q_95/format,webp",
@@ -15,4 +15,4 @@ import { AdsDataType } from "../Type";
     },
 
   ];
-  export default AdsData;
+  export default AdsData2;
