@@ -30,5 +30,7 @@ export enum Keywords {
     FreeDelivery = 'ارسال فوری رایگان',
     seeAll = "مشاهده همه",
     YourPoint = "امتیاز شما",
-    BestSellerProducts = "پرفروش ترین کالا ها"
+    BestSellerProducts = "پرفروش ترین کالا ها",
+    Readables = "خواندنی ها",
+    MoreArticlesInDigikalaMag = "مطالب بیشتر در دیجی کالا مگ"
   }

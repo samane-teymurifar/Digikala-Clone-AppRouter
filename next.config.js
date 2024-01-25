@@ -10,7 +10,12 @@ const nextConfig = {
         {
           protocol: "https",
           hostname: "https://www.digikala.com/**",
+        },
+        {
+          protocol: "https",
+          hostname: "https://www.digikala.com/mag/wp-content/**",
         }
+  
       ],
     },
   };

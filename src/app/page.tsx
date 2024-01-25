@@ -16,6 +16,7 @@ import DigiClub from "@src/components/DigiClub";
 import someJson from "@src/data/HomeData/content";
 import BestSelleProducts from "@src/components/BestSellingProducts";
 import SellingAndSales from "@src/components/SellingAndSales";
+import Articles from "@src/components/Articles";
 
 export default function Home() {
 
@@ -44,25 +45,39 @@ export default function Home() {
       {title: someJson.result.home_8.title , products: speaker}, 
   ]
   
+
+
+  const MobilePhone = someJson.result.home_1.products
+  const suitableData = (MobilePhone.concat(MobilePhone)).slice(0, 12)
+  const title = someJson.result.home_1.title
+
+
+
+  const Terending = someJson.result.trending.products
+  const suitableDataArray = (Terending.concat(Terending)).slice(0, 12)
+  const title2 = someJson.result.trending.title
+
   return (
     <main>
-      {/* <TopStories/>
-      <SwiperComponent/>
-      <BottomStories/>
-      <SurprisingOffer/>
-      <SurprisingSupermarket/>
-      <BazarcheCards/>
-      <Clacification/>
-      <BottomAds data={AdsData}/>
-      <DigikalaOffer/>
-      <PopularBBrands/>
-      <BottomAds data={AdsData2}/>
-      <ComputerAccessories SuitableData={SuitableData}/>
-      <Digiplus/>
-      <DigiClub/>
-      <ComputerAccessories SuitableData={SuitableData2}/>
-      <BestSelleProducts/> */}
+      {/* <TopStories/> */}
+      {/* <SwiperComponent/> */}
+      {/* <BottomStories/> */}
+      {/* <SurprisingOffer/> */}
+      {/* <SurprisingSupermarket/> */}
+      {/* <BazarcheCards/> */}
+      {/* <Clacification/> */}
+      {/* <BottomAds data={AdsData}/> */}
+      {/* <DigikalaOffer/> */}
+      {/* <PopularBBrands/> */}
+      {/* <BottomAds data={AdsData2}/> */}
+      {/* <ComputerAccessories SuitableData={SuitableData}/> */}
+      {/* <Digiplus/> */}
+      {/* <DigiClub/> */}
+      {/* <ComputerAccessories SuitableData={SuitableData2}/> */}
+      <BestSelleProducts suitableData={suitableData} title={title}/>
       <SellingAndSales/>
+      <BestSelleProducts suitableData={suitableDataArray} title={title2}/>
+      <Articles/>
 
     </main>
   )
