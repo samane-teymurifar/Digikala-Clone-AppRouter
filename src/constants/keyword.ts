@@ -29,5 +29,6 @@ export enum Keywords {
     Membership = 'عضویت',
     FreeDelivery = 'ارسال فوری رایگان',
     seeAll = "مشاهده همه",
-    YourPoint = "امتیاز شما"
+    YourPoint = "امتیاز شما",
+    BestSellerProducts = "پرفروش ترین کالا ها"
   }

@@ -14,6 +14,8 @@ import ComputerAccessories from "@src/components/ComputerComponent";
 import Digiplus from "@src/components/DigiPlus";
 import DigiClub from "@src/components/DigiClub";
 import someJson from "@src/data/HomeData/content";
+import BestSelleProducts from "@src/components/BestSellingProducts";
+import SellingAndSales from "@src/components/SellingAndSales";
 
 export default function Home() {
 
@@ -44,21 +46,23 @@ export default function Home() {
   
   return (
     <main>
-      {/* <TopStories/> */}
-      {/* <SwiperComponent/> */}
-      {/* <BottomStories/> */}
-      {/* <SurprisingOffer/> */}
-      {/* <SurprisingSupermarket/> */}
-      {/* <BazarcheCards/> */}
-      {/* <Clacification/> */}
-      {/* <BottomAds data={AdsData}/> */}
-      {/* <DigikalaOffer/> */}
-      {/* <PopularBBrands/> */}
+      {/* <TopStories/>
+      <SwiperComponent/>
+      <BottomStories/>
+      <SurprisingOffer/>
+      <SurprisingSupermarket/>
+      <BazarcheCards/>
+      <Clacification/>
+      <BottomAds data={AdsData}/>
+      <DigikalaOffer/>
+      <PopularBBrands/>
       <BottomAds data={AdsData2}/>
       <ComputerAccessories SuitableData={SuitableData}/>
       <Digiplus/>
       <DigiClub/>
       <ComputerAccessories SuitableData={SuitableData2}/>
+      <BestSelleProducts/> */}
+      <SellingAndSales/>
 
     </main>
   )

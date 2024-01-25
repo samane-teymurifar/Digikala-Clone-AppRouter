@@ -86,7 +86,11 @@ const config: Config = {
       surprisingSupermarket: '#edefed',
       offTo59Color : '#39ae00',
       digiplusColor: '#941b80'
-    }
+    },
+    fontFamily: {
+      custom: ['"font1"', 'sans-serif'],
+    },
+
   },
   plugins: [],
 }
