@@ -3,6 +3,7 @@ import Header from '@src/layouts/header';
 import Script from 'next/script';
 import React from 'react';
 import localFont from 'next/font/local';
+import Footer from '@src/layouts/footer';
 
 const iranYekan = localFont({
   src: [
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
       <body className="flex min-h-screen flex-col ">
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );

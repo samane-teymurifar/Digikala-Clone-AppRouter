@@ -32,5 +32,10 @@ export enum Keywords {
     YourPoint = "امتیاز شما",
     BestSellerProducts = "پرفروش ترین کالا ها",
     Readables = "خواندنی ها",
-    MoreArticlesInDigikalaMag = "مطالب بیشتر در دیجی کالا مگ"
+    MoreArticlesInDigikalaMag = "مطالب بیشتر در دیجی کالا مگ",
+    DigikalaRight = "برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.",
+    goToTop = "بازگشت به بالا"  ,
+    phoneSuport = "تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱",
+    phoneSuportData = "۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم",
+    beWithUs = "همراه ما باشید!"
   }
