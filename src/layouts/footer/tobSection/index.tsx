@@ -103,6 +103,9 @@ import FooterTopSectionData from "./data/index";
             icon: <SearchIcon/>
         },
     ]
+
+    console.log("SocialMedia", SocialMedia);
+    
     return (
       <section className=" mt-10 border-t border-gray-20">
         <div className="px-5 m-10">
