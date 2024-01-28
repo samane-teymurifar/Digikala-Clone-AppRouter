@@ -59,24 +59,24 @@ export default function Home() {
 
   return (
     <main>
-      {/* <TopStories/> */}
-      {/* <SwiperComponent/> */}
-      {/* <BottomStories/> */}
-      {/* <SurprisingOffer/> */}
-      {/* <SurprisingSupermarket/> */}
-      {/* <BazarcheCards/> */}
-      {/* <Clacification/> */}
-      {/* <BottomAds data={AdsData}/> */}
-      {/* <DigikalaOffer/> */}
-      {/* <PopularBBrands/> */}
-      {/* <BottomAds data={AdsData2}/> */}
-      {/* <ComputerAccessories SuitableData={SuitableData}/> */}
-      {/* <Digiplus/> */}
-      {/* <DigiClub/> */}
-      {/* <ComputerAccessories SuitableData={SuitableData2}/> */}
+      {/* <TopStories/>
+      <SwiperComponent/>
+      <BottomStories/>
+      <SurprisingOffer/>
+      <SurprisingSupermarket/>
+      <BazarcheCards/>
+      <Clacification/>
+      <BottomAds data={AdsData}/>
+      <DigikalaOffer/>
+      <PopularBBrands/>
+      <BottomAds data={AdsData2}/>
+      <ComputerAccessories SuitableData={SuitableData}/>
+      <Digiplus/>
+      <DigiClub/>
+      <ComputerAccessories SuitableData={SuitableData2}/>
       <BestSelleProducts suitableData={suitableData} title={title}/>
       <SellingAndSales/>
-      <BestSelleProducts suitableData={suitableDataArray} title={title2}/>
+      <BestSelleProducts suitableData={suitableDataArray} title={title2}/> */}
       <Articles/>
 
     </main>
