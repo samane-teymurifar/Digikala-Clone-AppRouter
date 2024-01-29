@@ -8,6 +8,7 @@ function Footer() {
     <footer>
       <TopSection/>
        <BottomFooter/> 
+       footer
     </footer>
   );
 }
