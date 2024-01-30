@@ -3,6 +3,9 @@ import Image from "next/image";
 import { Keywords } from "@src/constants/keyword";
 import SearchIcon from "@src/assets/icons/SearchIcon";
 import FooterTopSectionData from "./data/index";
+import DigikalaApp from "@src/components/DigikalaApp";
+import DigikalaInformation from "@src/components/DigiInformation/index";
+
 
 
  function TopSection() {
@@ -107,7 +110,8 @@ import FooterTopSectionData from "./data/index";
     console.log("SocialMedia", SocialMedia);
     
     return (
-      <section className=" mt-10 border-t border-gray-20">
+      <section className="px-36 mt-10 border-t border-gray-20">
+
         <div className="px-5 m-10">
         <div className="flex justify-between w-full">
             <Image src={"https://www.digikala.com/statics/img/svg/digi.svg"} width={100} height={30} alt=""/>
@@ -143,32 +147,49 @@ import FooterTopSectionData from "./data/index";
             ))}
         </div>
         </div>
-        <div>
-        <div className="flex flex-wrap justify-between">
-        {isArray(FooterInfo).map((item, key) => (
-            <div>
-                <p className="text-sm">{item.CatTitle}</p>
-                <div className="flex flex-col gap-2 mt-2">
-                    {
-                        item.text.map((subItem, index)=>{
-                            return <div key={`subItem-${index}`} className="text-base text-gray-30 ">{subItem.title}</div>
-                        })
-                    }
-                </div>
-            </div>
-        ))}
+
         
-        </div>
-        <div className="flex-grow"></div>
-                <div>{Keywords.beWithUs}</div>
-                <div className="flex justify-center">
-                    {
-                        isArray(SocialMedia).map((socialMedia)=>(
-                            socialMedia.icon
-                        ))
-                    }
+        
+            <div className="flex flex-wrap justify-between">
+                {isArray(FooterInfo).map((item, key) => (
+                    <div>
+                        <p className="text-sm">{item.CatTitle}</p>
+                        <div className="flex flex-col gap-2 mt-2">
+                            {
+                                item.text.map((subItem, index)=>{
+                                    return <div key={`subItem-${index}`} className="text-base text-gray-30 ">{subItem.title}</div>
+                                })
+                            }
+                        </div>
+                    </div>
+                ))}    
+                <div className="flex flex-col gap-3">
+                    <div>{Keywords.beWithUs}</div>
+                    <div className="flex justify-start gap-8">
+                        {
+                            isArray(SocialMedia).map((socialMedia)=>(
+                                socialMedia.icon
+                            ))
+                        }
+                    </div>
+                    <div className="text-gray-70 text-base">{Keywords.emailRegister}</div>
+                    
+                    <form className="flex gap-2">
+
+                        <input type="email" className="bg-gray-10 h-8 w-80 px-2 py-6 rounded-lg text-gray-80 border-none outline-none " placeholder={Keywords.YourEmail}/>
+                        <button className="bg-gray-10 text-gray-50 w-14 h-13 rounded-lg ">
+                            {Keywords.RegisterEmail}
+                        </button>
+                    </form>
+                    
                 </div>
-        </div>
+
+            </div>
+
+            <DigikalaApp/>
+       
+            <DigikalaInformation/>
+
       </section>
   );
 }

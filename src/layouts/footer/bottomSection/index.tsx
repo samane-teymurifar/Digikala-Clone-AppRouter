@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Keywords } from "@src/constants/keyword";
 
  function BottomFooter() {
+console.log("FooterData: ", FooterData);
 
     return (
       <section className="flex w-full flex-col border-t border-gray-20 mt-6">
@@ -11,10 +12,10 @@ import { Keywords } from "@src/constants/keyword";
         <div className="w-full flex flex-wrap justify-evenly items-start">
 
             {isArray(FooterData).map((item, key) => (
-                <div className="min-w-[200px] h-auto min-h-full bg-gray-60 relative">
+                
 
-                    <Image src={item.src} fill alt="" className="bg-gray-10 absolute p-5 border-l border-gray-20"/>
-                </div>
+                    <Image src={item.src} width={100} height={100} alt="" className="bg-gray-10 p-5 border-l border-gray-20"/>
+               
             ))}
         </div>
       </section>

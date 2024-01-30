@@ -37,5 +37,10 @@ export enum Keywords {
     goToTop = "بازگشت به بالا"  ,
     phoneSuport = "تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱",
     phoneSuportData = "۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم",
-    beWithUs = "همراه ما باشید!"
+    beWithUs = "همراه ما باشید!",
+    emailRegister = "با ثبت ایمیل از جدید ترین تخفیف ها با خبر شوید",
+    YourEmail = "ایمیل شما",
+    RegisterEmail = "ثبت",
+    DigikalaDownload = "دانلود اپلیکیشن دیجیکالا",
+    DigikalaDescription = "فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین"
   }
