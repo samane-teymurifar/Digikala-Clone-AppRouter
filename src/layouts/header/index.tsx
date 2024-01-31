@@ -5,7 +5,7 @@ import NavBar from "./navBar";
 
 function Header() {
   return (
-    <header className="h-[108px] bg-common-white w-full flex flex-col shadow-md">
+    <header className="h-[120px] bg-common-white w-full flex flex-col shadow-md pb-50">
       <TopHeader/>
       <NavBar/>
     </header>

@@ -2,21 +2,7 @@ import { SVGProps } from 'react';
 
 function SearchIcon({ ...props }: SVGProps<SVGSVGElement>) {
   return (
-    <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    fill="none"
-    {...props}
-  >  
-    <path
-      fill="#000"
-      fillOpacity={0.5}
-      fillRule="evenodd"
-      d="M11.647 4.08a7.361 7.361 0 1 0 4.976 12.785l.013-.012a7.342 7.342 0 0 0 2.372-5.411 7.36 7.36 0 0 0-7.361-7.361Zm6.516 13.278a8.77 8.77 0 0 0 2.285-5.917 8.8 8.8 0 0 0-8.801-8.8 8.801 8.801 0 1 0 5.463 15.702l2.815 2.807a.72.72 0 0 0 1.017-1.02l-2.78-2.772Z"
-      clipRule="evenodd"
-    />
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" {...props}><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
   );
 }
 

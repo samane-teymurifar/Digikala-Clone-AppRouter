@@ -3,7 +3,7 @@ export enum Keywords {
     DigikalaLogo = "لوگوی دیجیکالا",
     searchPlaceholder = "جستجو",
     login = "ورود",
-    sigUp = "ثبت نام",
+    sigUp = "ثبت‌نام",
     productsClassification = "دسته‌بندی کالاها",
     surprisingProducts = "شگفت انگیز ها",
     supermarket = "سوپرمارکت",
