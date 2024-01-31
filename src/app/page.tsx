@@ -58,26 +58,26 @@ export default function Home() {
   const title2 = someJson.result.trending.title
 
   return (
-    <main>
-      {/* <TopStories/>
+    <main className="mt-[112px]">
+      {/* <TopStories/> */}
       <SwiperComponent/>
-      <BottomStories/>
-      <SurprisingOffer/>
-      <SurprisingSupermarket/>
-      <BazarcheCards/>
-      <Clacification/>
-      <BottomAds data={AdsData}/>
-      <DigikalaOffer/>
-      <PopularBBrands/>
-      <BottomAds data={AdsData2}/>
-      <ComputerAccessories SuitableData={SuitableData}/>
-      <Digiplus/>
-      <DigiClub/>
-      <ComputerAccessories SuitableData={SuitableData2}/>
-      <BestSelleProducts suitableData={suitableData} title={title}/>
-      <SellingAndSales/>
-      <BestSelleProducts suitableData={suitableDataArray} title={title2}/> */}
-      <Articles/>
+      {/* <BottomStories/> */}
+      {/* <SurprisingOffer/> */}
+      {/* <SurprisingSupermarket/> */}
+      {/* <BazarcheCards/> */}
+      {/* <Clacification/> */}
+      {/* <BottomAds data={AdsData}/> */}
+      {/* <DigikalaOffer/> */}
+      {/* <PopularBBrands/> */}
+      {/* <BottomAds data={AdsData2}/> */}
+      {/* <ComputerAccessories SuitableData={SuitableData}/> */}
+      {/* <Digiplus/> */}
+      {/* <DigiClub/> */}
+      {/* <ComputerAccessories SuitableData={SuitableData2}/> */}
+      {/* <BestSelleProducts suitableData={suitableData} title={title}/> */}
+      {/* <SellingAndSales/> */}
+      {/* <BestSelleProducts suitableData={suitableDataArray} title={title2}/> */}
+      {/* <Articles/> */}
 
     </main>
   )

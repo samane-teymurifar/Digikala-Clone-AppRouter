@@ -19,3 +19,17 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
+.SweeperComponent {
+  margin-top: 32px
+}
+.SweeperComponent .swiper-pagination-bullet-active {
+  width: 16px !important;
+  height: 6px !important;
+  background-color: white;
+  border-radius: 8px;
+}
+.SweeperComponent .swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+  transition: ease-in-out 0.2s;
+}

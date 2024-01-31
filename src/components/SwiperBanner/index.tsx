@@ -10,37 +10,36 @@ import {
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
 import ArrowIcon from "@icons/ArrowIcon";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Slides from "./Data/data";
-type Properties = {
-  Slides: { id: string; src: string }[];
-};
+
 function SwiperComponent() {
 
   const swiperRef = useRef(null);
+  const [showButtons , setShowButtons] = useState(false)
   const handleNext = () => {
     if (swiperRef.current !== null) {
-      // swiperRef.current.slideNext();
+      swiperRef.current.slideNext();
     }
   };
 
   const handlePrev = () => {
     if (swiperRef.current !== null) {
-      // swiperRef.current.slidePrev();
+      swiperRef.current.slidePrev();
     }
   };
 
   return (
-    <div className="mt-8">
+    <div className="SweeperComponent" onMouseOver={()=>setShowButtons(true)} onMouseOut={()=> setShowButtons(false)}>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
         pagination={{ clickable: false }}
-        // onSwiper={(swiper) => (swiperRef.current = swiper)}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
         autoplay={{
-          delay: 2500,
-          disableOnInteraction: true,
+          delay: 300000,
+          disableOnInteraction: false,
         }}
         style={{'position': 'relative', 'marginLeft': '2px'}}
       >
@@ -56,18 +55,18 @@ function SwiperComponent() {
             />
           </SwiperSlide>
         ))}
-        <div className="absolute bottom-5 right-5 z-10 gap-2 flex">
+        <div className={`${showButtons ? '' : 'hidden'} absolute bottom-5 right-5 z-10 gap-2 flex`}>
           <button
-            className="bg-gray-5 border border-gray-20 w-[38px] h-[38px] rounded-full rotate-90 cursor-pointer"
+            className="bg-gray-5 flex items-center justify-center border border-gray-20 w-[38px] h-[38px] rounded-full  cursor-pointer"
             onClick={handlePrev}
           >
-            <ArrowIcon />
+            <ArrowIcon className="fill-secondaryTint-90"/>
           </button>
           <button
-            className="bg-gray-5 border border-gray-20 w-[38px] h-[38px] rounded-full -rotate-90  cursor-pointer"
+            className="bg-gray-5 border rotate-180 flex justify-center items-center border-gray-20 w-[38px] h-[38px] rounded-full   cursor-pointer"
             onClick={handleNext}
           >
-            <ArrowIcon />
+            <ArrowIcon className="fill-secondaryTint-90"/>
           </button>
         </div>
       </Swiper>
