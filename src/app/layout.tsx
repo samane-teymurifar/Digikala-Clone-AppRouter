@@ -1,6 +1,5 @@
 import '@app/globals.css';
 import Header from '@src/layouts/header';
-import Script from 'next/script';
 import React from 'react';
 import localFont from 'next/font/local';
 import Footer from '@src/layouts/footer';
