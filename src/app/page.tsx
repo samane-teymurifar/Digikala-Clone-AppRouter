@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <main className="mt-[112px]">
       {/* <TopStories/> */}
-      <SwiperComponent/>
+      {/* <SwiperComponent/> */}
       {/* <BottomStories/> */}
       {/* <SurprisingOffer/> */}
       {/* <SurprisingSupermarket/> */}

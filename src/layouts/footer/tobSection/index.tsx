@@ -107,7 +107,6 @@ import DigikalaInformation from "@src/components/DigiInformation/index";
         },
     ]
 
-    console.log("SocialMedia", SocialMedia);
     
     return (
       <section className="px-36 mt-10 border-t border-gray-20">
