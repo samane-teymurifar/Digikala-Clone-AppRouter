@@ -7,6 +7,8 @@ import Link from "next/link";
 function BottomFooter() {
 
 
+
+  
     return (
       <section className="flex w-full flex-col mt-6">
         <div className="mx-12 border-t border-gray-5 pt-10 text-xs text-gray-30 my-8 text-center">{Keywords.DigikalaRight}</div>

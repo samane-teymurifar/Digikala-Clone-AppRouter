@@ -5,109 +5,11 @@ import SearchIcon from "@src/assets/icons/SearchIcon";
 import FooterTopSectionData from "./data/index";
 import DigikalaApp from "@src/components/DigikalaApp";
 import DigikalaInformation from "@src/components/DigiInformation/index";
+import { FooterInfo } from "./data/index";
+import { SocialMedia}  from "./data/index"
 
 
-
- function TopSection() {
-
-
-    const FooterInfo = [
-        {
-            id: 0,
-            CatTitle: "با دیجی‌کالا",
-            text: [
-                {
-                    id: 0,
-                    title: "اتاق خبر دیجی‌کالا"
-                },
-                {
-                    id: 1,
-                    title: "فروش در دیجی‌کالا"
-                },
-                {
-                    id: 2,
-                    title: "فرصت‌های شغلی"
-                },
-                {
-                    id: 3,
-                    title: "گزارش تخلف در دیجی‌کالا"
-                },
-                {
-                    id: 4,
-                    title: "تماس با دیجی‌کالا"
-                },{
-                    id: 5,
-                    title: "درباره دیجی‌کالا"
-                }
-            ]
-        },
-        {
-            id: 1,
-            CatTitle: "خدمات مشتریان",
-            text: [
-                {
-                    id: 0,
-                    title: "پاسخ به پرسش‌های متداول"
-                },
-                {
-                    id: 1,
-                    title: "رویه‌های بازگرداندن کالا"
-                },
-                {
-                    id: 2,
-                    title: "شرایط استفاده"
-                },
-                {
-                    id: 3,
-                    title: "حریم خصوصی"
-                },
-                {
-                    id: 4,
-                    title: "گزارش باگ"
-                },
-            ]
-        },
-        {
-            id: 1,
-            CatTitle:  "راهنمای خرید از دیجی‌کالا",
-            text: [
-                {
-                    id: 0,
-                    title: "نحوه ثبت سفارش"
-                },
-                {
-                    id: 1,
-                    title: "رویه ارسال سفارش"
-                },
-                {
-                    id: 2,
-                    title: "شیوه‌های پرداخت"
-                }
-            ]
-        },
-    ];
-
-
-    const SocialMedia = [
-        {
-            id: 0,
-            icon: <SearchIcon/>
-        },
-        {
-            id: 1,
-            icon: <SearchIcon/>
-        },
-        {
-            id: 2,
-            icon: <SearchIcon/>
-        },
-        {
-            id: 3,
-            icon: <SearchIcon/>
-        },
-    ]
-
-    
+function TopSection() {
     return (
       <section className="px-36 mt-10 border-t border-gray-20">
 
