@@ -28,16 +28,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
   return (
     <html lang="fa" dir="rtl" className={iranYekan.className + ' scroll-smooth '}>
       <head>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-TTFJ4RRH83" />
-        <Script id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-TTFJ4RRH83');
-        `}
-        </Script>
       </head>
       <body className="flex min-h-screen flex-col ">
         <Header />

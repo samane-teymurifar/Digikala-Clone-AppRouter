@@ -115,14 +115,14 @@ export const FooterInfo = [
 export const SocialMedia = [
     {
         id: 0,
-        icon: <InstagramIcon className="fill-secondaryTint-90"/>
+        icon: <InstagramIcon className="fill-secondaryTint-50"/>
     },
     {
         id: 1,
-        icon: <TwitterIcon className="fill-secondaryTint-90"/>
+        icon: <TwitterIcon className="fill-secondaryTint-50"/>
     },
     {
         id: 2,
-        icon: <LinkdinIcon className="fill-secondaryTint-90"/>
+        icon: <LinkdinIcon className="fill-secondaryTint-50"/>
     },
 ]
