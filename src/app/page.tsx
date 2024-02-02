@@ -3,7 +3,7 @@ import BottomAds from "@src/components/BottomAds";
 import BottomStories from "@src/components/BottomStory";
 import Clacification from "@src/components/Clacification";
 import DigikalaOffer from "@src/components/DigikalaOffer";
-import PopularBBrands from "@src/components/PopularBrands";
+import PopularBrands from "@src/components/PopularBrands";
 import SurprisingSupermarket from "@src/components/SupermarketSurprising";
 import SurprisingOffer from "@src/components/SurprisingOffer";
 import SwiperComponent from "@src/components/SwiperBanner";
@@ -59,26 +59,25 @@ export default function Home() {
 
   return (
     <main className="mt-[112px]">
-      {/* <TopStories/> */}
-      {/* <SwiperComponent/> */}
-      {/* <BottomStories/> */}
-      {/* <SurprisingOffer/> */}
-      {/* <SurprisingSupermarket/> */}
-      {/* <BazarcheCards/> */}
-      {/* <Clacification/> */}
-      {/* <BottomAds data={AdsData}/> */}
-      {/* <DigikalaOffer/> */}
-      {/* <PopularBBrands/> */}
-      {/* <BottomAds data={AdsData2}/> */}
-      {/* <ComputerAccessories SuitableData={SuitableData}/> */}
-      {/* <Digiplus/> */}
-      {/* <DigiClub/> */}
-      {/* <ComputerAccessories SuitableData={SuitableData2}/> */}
-      {/* <BestSelleProducts suitableData={suitableData} title={title}/> */}
-      {/* <SellingAndSales/> */}
-      {/* <BestSelleProducts suitableData={suitableDataArray} title={title2}/> */}
-      {/* <Articles/> */}
-
+      <TopStories/>
+      <SwiperComponent/>
+      <BottomStories/>
+      <SurprisingOffer/>
+      <SurprisingSupermarket/>
+      <BazarcheCards/>
+      <Clacification/>
+      <BottomAds data={AdsData}/>
+      <DigikalaOffer/>
+      <PopularBrands/>
+      <BottomAds data={AdsData2}/>
+      <ComputerAccessories SuitableData={SuitableData}/>
+      <Digiplus/>
+      <DigiClub/>
+      <ComputerAccessories SuitableData={SuitableData2}/>
+      <BestSelleProducts suitableData={suitableData} title={title}/>
+      <SellingAndSales/>
+      <BestSelleProducts suitableData={suitableDataArray} title={title2}/>
+      <Articles/>
     </main>
   )
 }
