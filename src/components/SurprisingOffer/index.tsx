@@ -36,7 +36,7 @@ function SurprisingOffer() {
 
  return (
     <section className="w-full px-48">
-        <div className="w-full bg-primary-main h-[300px] rounded-2xl">
+        <div className="w-full bg-primary-light h-[300px] rounded-2xl">
        
             <div className="py-4 h-full flex">  
             <div className="px-24 flex flex-col items-center justify-center"> 

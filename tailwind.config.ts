@@ -14,7 +14,6 @@ const config: Config = {
     },
     colors: {
       primary: {
-        main: '#EF3F3E',
         light: '#EF3F3E',
          //FIXME
         dark: '#512DA8'

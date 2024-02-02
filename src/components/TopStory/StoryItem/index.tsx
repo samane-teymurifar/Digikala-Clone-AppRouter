@@ -20,7 +20,7 @@ function StoryItem( {item,TopStoriesData}:{item : HomeTrendingDataType, TopStori
             width="80"
             height="80"
             alt={Item.category_title}
-            className={`${viewStory ? `border-secondary-main` :`border-primary-main` }  rounded-full border-[3px]`}
+            className={`${viewStory ? `border-secondary-main` :`border-primary-light` }  rounded-full border-[3px]`}
           />
           <div className="text-xs font-light mt-2 w-32 text-center text-gray-60">{Item.category_title}</div>
     </div>

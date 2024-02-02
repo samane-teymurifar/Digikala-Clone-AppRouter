@@ -15,7 +15,7 @@ function SellingAndSales() {
                 <div className="flex flex-col gap-y-2 border-l  border-gray-10 border-b p-2">
                     <Image src={item.images.main} width={150} height={150} alt={item.title_fa}/>
                     <div className="flex justify-between">
-                        <div className="bg-primary-main w-fit h-fit text-center rounded-2xl  text-xs text-common-white px-2 py-1">50%</div>
+                        <div className="bg-primary-light w-fit h-fit text-center rounded-2xl  text-xs text-common-white px-2 py-1">50%</div>
                         <div className="flex items-center gap-1">
                             <div  className="text-sm">{item.price.selling_price}</div>
                             <div className="text-xs text-gray-60">{Keywords.toman}</div>
