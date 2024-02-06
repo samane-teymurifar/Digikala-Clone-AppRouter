@@ -1,22 +1,18 @@
-import  BottomStoryData  from "./Data/data";
-import BotomStoryItem from "./BottomStoryItem/index";
-import { isArray } from "@src/utiles/helper/isArray";
+import BottomStoryData from './data';
+import BotomStoryItem from './BottomStoryItem/index';
+import {isArray} from '@src/utiles/helper/isArray';
 
- function BottomStories() {
-
- type BottomStoriesItemType = {
+function BottomStories() {
+  type BottomStoriesItemType = {
     src: string;
     title: string;
- }
-    return (
+  };
+  return (
     <section className="px-96">
       <div className="w-full bg-common-white py-4 flex justify-between my-6 gap-[50px]">
-
-      {isArray(BottomStoryData).map((item:BottomStoriesItemType) => {
-        return (
-          <BotomStoryItem key={item.src} item={item}/>
-        );
-      })}
+        {isArray(BottomStoryData).map((item: BottomStoriesItemType) => {
+          return <BotomStoryItem key={item.src} item={item} />;
+        })}
       </div>
     </section>
   );
