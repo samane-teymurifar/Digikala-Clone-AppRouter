@@ -1,83 +1,49 @@
-import BazarcheCards from "@src/components/Bazarche";
-import BottomAds from "@src/components/BottomAds";
-import BottomStories from "@src/components/BottomStory";
-import Clacification from "@src/components/Clacification";
-import DigikalaOffer from "@src/components/DigikalaOffer";
-import PopularBrands from "@src/components/PopularBrands";
-import SurprisingSupermarket from "@src/components/SupermarketSurprising";
-import SurprisingOffer from "@src/components/SurprisingOffer";
-import SwiperComponent from "@src/components/SwiperBanner";
-import TopStories from "@src/components/TopStory";
-import AdsData from "@src/components/BottomAds/Data/index"
-import AdsData2 from "@src/components/Ads3/Data/index";
-import ComputerAccessories from "@src/components/ComputerComponent";
-import Digiplus from "@src/components/DigiPlus";
-import DigiClub from "@src/components/DigiClub";
-import someJson from "@src/data/HomeData/content";
-import BestSelleProducts from "@src/components/BestSellingProducts";
-import SellingAndSales from "@src/components/SellingAndSales";
-import Articles from "@src/components/Articles";
+import BazarcheCards from '@src/components/Bazarche';
+import AdsComponent from '@src/components/AdsComponent';
+import BottomStories from '@src/components/BottomStory';
+import Clacification from '@src/components/Clacification';
+import DigikalaOffer from '@src/components/DigikalaOffer';
+import PopularBrands from '@src/components/PopularBrands';
+import SurprisingSupermarket from '@src/components/SupermarketSurprising';
+import SurprisingOffer from '@src/components/SurprisingOffer';
+import SwiperComponent from '@src/components/SwiperBanner';
+// import TopStories from '@src/components/TopStory';
+import {AdsData} from '@src/data/data';
+import {SecondAdsData} from '@src/data/data';
+import {RandomCategoriesData} from '@src/data/data';
+import {SecondRandomCategoriesData} from '@src/data/data';
+import {BestSellerData, BestSellerDataTitle} from '@src/data/data';
+import {TerendingData, TerendingDataTitle} from '@src/data/data';
+import {ArticlesData} from '@src/data/data';
+import RandomCategories from '@src/components/RandomCategories';
+import Digiplus from '@src/components/DigiPlus';
+import DigiClub from '@src/components/DigiClub';
+import TopProducts from '@src/components/TopProducts';
+import SellingAndSales from '@src/components/SellingAndSales';
+import Articles from '@src/components/Articles';
 
 export default function Home() {
-
-  const ComputerAccessoriesMobilePhone = someJson.result.home_1.products
-  const ComputerAccessoriesCellPhonePouchCover = someJson.result.home_2.products
-  const ComputerAccessoriesHeadphone = someJson.result.home_3.products
-  const ComputerAccessoriesSmartWatch = someJson.result.home_4.products
-
-  const SuitableData = [ 
-      {title: someJson.result.home_1.title , products: ComputerAccessoriesMobilePhone},
-      {title: someJson.result.home_2.title , products: ComputerAccessoriesCellPhonePouchCover},
-      {title: someJson.result.home_3.title , products: ComputerAccessoriesHeadphone}, 
-      {title: someJson.result.home_4.title , products: ComputerAccessoriesSmartWatch}, 
-  ]
-
-
-  const notebookNetbookUltrabook = someJson.result.home_5.products
-  const inCarAccessories = someJson.result.home_6.products
-  const medicalSupplement = someJson.result.home_7.products
-  const speaker = someJson.result.home_8.products
-
-  const SuitableData2 = [ 
-      {title: someJson.result.home_5.title , products: notebookNetbookUltrabook},
-      {title: someJson.result.home_6.title , products: inCarAccessories},
-      {title: someJson.result.home_7.title , products: medicalSupplement}, 
-      {title: someJson.result.home_8.title , products: speaker}, 
-  ]
-  
-
-
-  const MobilePhone = someJson.result.home_1.products
-  const suitableData = (MobilePhone.concat(MobilePhone)).slice(0, 12)
-  const title = someJson.result.home_1.title
-
-
-
-  const Terending = someJson.result.trending.products
-  const suitableDataArray = (Terending.concat(Terending)).slice(0, 12)
-  const title2 = someJson.result.trending.title
-
   return (
     <main className="mt-[112px]">
-      <TopStories/>
-      <SwiperComponent/>
-      <BottomStories/>
-      <SurprisingOffer/>
-      <SurprisingSupermarket/>
-      <BazarcheCards/>
-      <Clacification/>
-      <BottomAds data={AdsData}/>
-      <DigikalaOffer/>
-      <PopularBrands/>
-      <BottomAds data={AdsData2}/>
-      <ComputerAccessories SuitableData={SuitableData}/>
-      <Digiplus/>
-      <DigiClub/>
-      <ComputerAccessories SuitableData={SuitableData2}/>
-      <BestSelleProducts suitableData={suitableData} title={title}/>
-      <SellingAndSales/>
-      <BestSelleProducts suitableData={suitableDataArray} title={title2}/>
-      <Articles/>
+      {/* <TopStories/> */}
+      <SwiperComponent />
+      <BottomStories />
+      <SurprisingOffer />
+      <SurprisingSupermarket />
+      <BazarcheCards />
+      <Clacification />
+      <AdsComponent data={AdsData} />
+      <DigikalaOffer />
+      <PopularBrands />
+      <AdsComponent data={SecondAdsData} />
+      <RandomCategories data={RandomCategoriesData} />
+      <Digiplus />
+      <DigiClub />
+      <RandomCategories data={SecondRandomCategoriesData} />
+      <TopProducts data={BestSellerData} title={BestSellerDataTitle} />
+      <SellingAndSales />
+      <TopProducts data={TerendingData} title={TerendingDataTitle} />
+      <Articles data={ArticlesData} />
     </main>
-  )
+  );
 }

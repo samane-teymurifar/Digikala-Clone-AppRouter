@@ -1,13 +1,13 @@
 import { isArray } from "@src/utiles/helper/isArray";
 import Image from "next/image";
 
-function BestSelleProducts({suitableData , title}: any) {
+function TopProducts({data , title}: any) {
 
     return (
         <section className="mx-48 mt-4 border border-gray-10 rounded-2xl">
             <div className="text-2xl text-common-black text-center mt-4">{title}</div>
             <div  className="grid grid-cols-4 gap-6 m-4 mt-8">
-            {isArray(suitableData).map((item, index) => (
+            {isArray(data).map((item, index) => (
                 <div className="flex items-center gap-2 justify-center">
                     <Image src={item.images.main} width={86} height={86} alt={item.title_fa}/>
                     <div  className="text-lg text-tertiaryTint-50 font-bold font2">{++index}</div>
@@ -20,4 +20,4 @@ function BestSelleProducts({suitableData , title}: any) {
   );
 }
 
-export default BestSelleProducts;
+export default TopProducts;

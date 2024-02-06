@@ -2,12 +2,12 @@ import { isArray } from "@src/utiles/helper/isArray";
 import Image from "next/image";
 import { Keywords } from "@src/constants/keyword";
 import SearchIcon from "@src/assets/icons/SearchIcon";
-function ComputerAccessories({SuitableData}: any) {
+function RandomCategories({data}: any) {
 
 
     return (
     <section className="grid grid-cols-4 mx-48 mt-4 border border-gray-10 rounded-2xl">
-            {isArray(SuitableData).map((item, index) => (
+            {isArray(data).map((item, index) => (
        
                 <div key={`ComputerAccessories-${index}`} className={`px-5 py-2 ${index !== 3 && 'border-l border-gray-10'}`}>      
                 <div>{item.title}</div>
@@ -34,4 +34,4 @@ function ComputerAccessories({SuitableData}: any) {
   );
 }
 
-export default ComputerAccessories;
+export default RandomCategories;
