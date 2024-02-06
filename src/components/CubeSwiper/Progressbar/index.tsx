@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, {useEffect, useRef} from 'react';
 type Properties = {
   initialWidth: string;
 };
-const StoryProgressBar = ({ initialWidth }: Properties) => {
+const StoryProgressBar = ({initialWidth}: Properties) => {
   const progressBarRef = useRef(null);
 
   useEffect(() => {
@@ -28,8 +28,10 @@ const StoryProgressBar = ({ initialWidth }: Properties) => {
       <div
         ref={progressBarRef}
         className="h-full bg-primaryTint-80"
-        style={{ width: `${initialWidth}`, transition: "width 0.5s ease-in-out" }}
-      ></div>
+        style={{
+          width: `${initialWidth}`,
+          transition: 'width 0.5s ease-in-out',
+        }}></div>
     </div>
   );
 };

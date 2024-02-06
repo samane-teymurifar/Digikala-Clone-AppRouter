@@ -1,5 +1,5 @@
 'use client'
-import PopularBrandsData from './Data/index';
+import PopularBrandsData from './data';
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
