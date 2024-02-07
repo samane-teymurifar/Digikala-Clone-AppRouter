@@ -1,13 +1,12 @@
-import Image from "next/image";
-import BottomFooter from "./bottomSection";
-import TopSection from "./topSection";
-
+import Image from 'next/image';
+import BottomFooter from './bottomSection';
+import TopSection from './topSection';
 
 function Footer() {
   return (
     <footer>
-      <TopSection/>
-      <BottomFooter/> 
+      <TopSection />
+      <BottomFooter />
     </footer>
   );
 }
