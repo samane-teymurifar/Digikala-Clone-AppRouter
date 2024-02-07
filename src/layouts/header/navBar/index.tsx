@@ -32,7 +32,6 @@ function NavBar() {
 
       <span className="flex gap-4 items-center">
         <LocationIcon className="fill-secondaryTint-80" />
-
         <span className="text-sm text-gray-50">{Keywords.chooseLocation}</span>
       </span>
     </div>

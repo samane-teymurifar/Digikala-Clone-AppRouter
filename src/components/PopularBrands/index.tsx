@@ -31,7 +31,7 @@ function SurprisingOffer() {
       onSwiper={swiper => (swiperRef.current = swiper)}
       style={{}}>
       {isArray(PopularBrandsData)?.map(product => (
-        <SwiperSlide key={product?.id}>salam</SwiperSlide>
+        <SwiperSlide key={product?.id}></SwiperSlide>
       ))}
       <div className="absolute bottom-5 right-5 z-10 gap-2 flex">
         <button

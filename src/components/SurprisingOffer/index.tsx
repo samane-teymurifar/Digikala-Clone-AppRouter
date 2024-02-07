@@ -42,12 +42,11 @@ function SurprisingOffer() {
             // pagination={{ clickable: false }}
             onSwiper={swiper => (swiperRef.current = swiper)}
             style={{height: '100%'}}>
-            {isArray(surprisingOffersProducts?.products)?.map(product => (
+            {isArray(surprisingOffersProducts?.products)?.map((product, key) => (
               <SwiperSlide key={product?.id}>
                 <SurprisingOfferCard product={product} />
               </SwiperSlide>
             ))}
-            {/* <SurprisingOfferCards surprisingOffersProducts={surprisingOffersProducts}/> */}
             <div className="absolute bottom-5 right-5 z-10 gap-2 flex">
               <button
                 className="bg-gray-5 border border-gray-20 w-[38px] h-[38px] rounded-full rotate-90 cursor-pointer"

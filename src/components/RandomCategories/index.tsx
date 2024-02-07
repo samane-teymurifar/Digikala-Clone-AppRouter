@@ -24,7 +24,7 @@ function RandomCategories({data}: any) {
                     alt={`subItem-${index}`}
                     width={130}
                     height={130}
-                    key={`ComputerAccessories-subItem-${index}`}
+                    key={`RandomCategories-subItem-${index}-${subItem.images.main}`}
                   />
                 );
               })}

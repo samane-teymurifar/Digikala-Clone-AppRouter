@@ -32,7 +32,9 @@ function DigiClub() {
               <div
                 className={`flex flex-row h-fit justify-center items-center bg-common-white ${
                   index === 0 && 'rounded-tr-lg rounded-br-lg'
-                } ${index === 2 && 'rounded-tl-lg rounded-bl-lg'}`}>
+                  } ${index === 2 && 'rounded-tl-lg rounded-bl-lg'}`}
+                key={`DigiClubDataArray-Item-${index}`}
+              >
                 <div
                   className={`bg-common-white  h-[85px] flex items-center pl-2 pr-4 ${
                     index === 0 && 'rounded-tr-lg rounded-br-lg'

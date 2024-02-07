@@ -11,8 +11,9 @@ function BottomFooter() {
       </div>
       <div className="px-7 bg-gray-5">
         <div className="w-full flex flex-wrap  items-start justify-end">
-          {isArray(FooterData).map((item) => (
+          {isArray(FooterData).map((item, key) => (
             <Link
+              key={`BottomFooter-Item-${key}`}
               href={item.href}
               className="px-5 grow w-[12%] flex justify-center items-center flex-col h-20">
               <img src={item.src} height="20" alt={item.alt} />

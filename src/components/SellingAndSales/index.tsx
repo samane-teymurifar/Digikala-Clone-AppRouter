@@ -12,7 +12,7 @@ function SellingAndSales() {
       </div>
       <div className="grid grid-cols-6  m-4 mt-8">
         {isArray(SellingAndSales.products).map((item, index) => (
-          <div className="flex flex-col gap-y-2 border-l  border-gray-10 border-b p-2">
+          <div className="flex flex-col gap-y-2 border-l  border-gray-10 border-b p-2" key={`SellingAndSales-Item-${index}`}>
             <Image
               src={item.images.main}
               width={150}

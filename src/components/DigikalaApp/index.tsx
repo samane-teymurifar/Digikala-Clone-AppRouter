@@ -23,6 +23,7 @@ function DigikalaApp() {
                 height={60}
                 alt={digiAppImage.src}
                 className="p-1"
+                key={`DigikalaAppData-Item-${index}`}
               />
             );
           })}

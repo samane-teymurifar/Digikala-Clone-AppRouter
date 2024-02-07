@@ -1,6 +1,6 @@
 import {getData} from './data';
 import StoryItem from './StoryItem';
-import {HomeTrendingDataType} from '@utiles/types/homeTrending';
+import {HomeTrendingDataType} from './types';
 import {isArray} from '@src/utiles/helper/isArray';
 
 async function TopStories() {
@@ -9,10 +9,10 @@ async function TopStories() {
 
   return (
     <section className="w-full bg-common-white py-6 flex justify-center my-6 gap-[50px]">
-      {isArray(TopStoriesData).map((item: HomeTrendingDataType) => {
+      {isArray(TopStoriesData).map((item: HomeTrendingDataType, key) => {
         return (
           <StoryItem
-            key={item.id}
+            key={`StoryItem-Item-${key}`}
             item={item}
             TopStoriesData={TopStoriesData}
           />

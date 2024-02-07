@@ -1,6 +1,6 @@
 'use client';
 import CubeSwiperComponent from '@src/components/CubeSwiper';
-import {HomeTrendingDataType} from '@src/utiles/types/homeTrending';
+import {HomeTrendingDataType} from '../types';
 import Image from 'next/image';
 import {useState} from 'react';
 import {createPortal} from 'react-dom';

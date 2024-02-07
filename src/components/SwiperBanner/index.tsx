@@ -44,8 +44,8 @@ function SwiperComponent() {
           disableOnInteraction: false,
         }}
         style={{position: 'relative', marginLeft: '2px'}}>
-        {Slides?.map(slide => (
-          <SwiperSlide key={slide?.src}>
+        {Slides?.map((slide, key) => (
+          <SwiperSlide key={`SwiperSlide-Item-${key}`}>
             <Image
               src={slide?.src}
               alt={slide?.id}
