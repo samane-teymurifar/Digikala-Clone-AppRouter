@@ -9,7 +9,7 @@ function ColumnsSection() {
         <div>
           <p className="text-sm">{item.CatTitle}</p>
           <div className="flex flex-col gap-6 mt-2">
-            {item.text.map((subItem, index) => {
+            {item.text.map((subItem: any, index: any) => {
               return (
                 <div
                   key={`subItem-${index}`}

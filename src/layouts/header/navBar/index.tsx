@@ -1,6 +1,5 @@
-import SearchIcon from '@icons/SearchIcon';
 import {Keywords} from '@constants/keyword';
-import {HeaderInfo} from '../data';
+import {HeaderInfo} from './data';
 import {isArray} from '@src/utiles/helper/isArray';
 import LocationIcon from '@src/assets/icons/LocationIcon';
 import MenuIcon from '@src/assets/icons/MenuIcon';

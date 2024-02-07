@@ -1,6 +1,5 @@
 import InstagramIcon from '@src/assets/icons/Instagram';
 import LinkdinIcon from '@src/assets/icons/Linkdin';
-import SearchIcon from '@src/assets/icons/SearchIcon';
 import TwitterIcon from '@src/assets/icons/Twitter';
 
 type footerDataType = {

@@ -1,6 +1,5 @@
 import {isArray} from '@src/utiles/helper/isArray';
 import FooterData from './data';
-// import Image from "next/image";
 import {Keywords} from '@src/constants/keyword';
 import Link from 'next/link';
 
@@ -12,8 +11,7 @@ function BottomFooter() {
       </div>
       <div className="px-7 bg-gray-5">
         <div className="w-full flex flex-wrap  items-start justify-end">
-          {isArray(FooterData).map((item, key) => (
-            // <Image src={item.src} width={200} height={100} alt="" className="bg-gray-10 p-5 border-l border-gray-20"/>
+          {isArray(FooterData).map((item) => (
             <Link
               href={item.href}
               className="px-5 grow w-[12%] flex justify-center items-center flex-col h-20">
