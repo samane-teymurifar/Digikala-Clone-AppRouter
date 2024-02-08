@@ -39,7 +39,7 @@ function DigiClub() {
                   className={`bg-common-white  h-[85px] flex items-center pl-2 pr-4 ${
                     index === 0 && 'rounded-tr-lg rounded-br-lg'
                   } ${index === 2 && 'rounded-tl-lg rounded-bl-lg'}`}>
-                  <SearchIcon />
+                  {clubImage.icon}
                 </div>
                 <div className="text-sm bg-common-white h-[85px] text-center flex items-center">
                   {clubImage.title}

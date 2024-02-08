@@ -1,4 +1,4 @@
-import SearchIcon from '@src/assets/icons/SearchIcon';
+import ArrowIcon from '@src/assets/icons/ArrowIcon';
 import {Keywords} from '@src/constants/keyword';
 import {isArray} from '@src/utiles/helper/isArray';
 import Image from 'next/image';
@@ -10,11 +10,9 @@ function Articles({data}: any) {
         <div className="text-base text-common-black text-center mt-4">
           {Keywords.Readables}
         </div>
-        <div className="flex justify-between items-center">
-          <div className="text-base text-tertiary-main text-center mt-4">
-            {Keywords.MoreArticlesInDigikalaMag}
-          </div>
-          <SearchIcon />
+        <div className="flex justify-between items-center text-base text-tertiary-main text-center mt-4">
+          {Keywords.MoreArticlesInDigikalaMag}
+          <ArrowIcon className="fill-tertiary-main rotate-180" />
         </div>
       </div>
       <div className="grid grid-cols-4  mt-8">

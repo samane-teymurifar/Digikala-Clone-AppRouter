@@ -1,3 +1,6 @@
 export type BazarcheCardType = {
-  src: string;
+  bazarcheCard: {
+    src: string;
+    alt: string;
+  };
 };

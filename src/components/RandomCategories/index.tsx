@@ -2,6 +2,7 @@ import {isArray} from '@src/utiles/helper/isArray';
 import Image from 'next/image';
 import {Keywords} from '@src/constants/keyword';
 import SearchIcon from '@src/assets/icons/SearchIcon';
+import ArrowIcon from '@src/assets/icons/ArrowIcon';
 function RandomCategories({data}: any) {
   return (
     <section className="grid grid-cols-4 mx-48 mt-4 border border-gray-10 rounded-2xl">
@@ -31,7 +32,7 @@ function RandomCategories({data}: any) {
           </div>
           <div className="text-sm text-tertiary-main flex items-center justify-center mt-2">
             {Keywords.Visit}
-            <SearchIcon />
+            <ArrowIcon className='fill-tertiary-main rotate-180' />
           </div>
         </div>
       ))}

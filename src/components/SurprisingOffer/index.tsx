@@ -28,7 +28,13 @@ function SurprisingOffer() {
   return (
     <section className="w-full px-48">
       <div className="w-full bg-primary-light h-[300px] rounded-2xl">
-        <div className="py-4 h-full flex">
+        <div className="py-4 h-full flex items-center relative">
+          {' '}
+          <button
+            className="bg-gray-5 flex absolute mr-2 justify-center items-center border border-gray-20 w-[38px] h-[38px] rounded-full cursor-pointer"
+            onClick={handlePrev}>
+            <ArrowIcon className="fill-gray-40" />
+          </button>
           <div className="px-24 flex flex-col items-center justify-center">
             <span className="text-center text-common-white text-3xl">
               {Keywords.surprisingOffer}
@@ -42,24 +48,19 @@ function SurprisingOffer() {
             // pagination={{ clickable: false }}
             onSwiper={swiper => (swiperRef.current = swiper)}
             style={{height: '100%'}}>
-            {isArray(surprisingOffersProducts?.products)?.map((product, key) => (
-              <SwiperSlide key={product?.id}>
-                <SurprisingOfferCard product={product} />
-              </SwiperSlide>
-            ))}
-            <div className="absolute bottom-5 right-5 z-10 gap-2 flex">
-              <button
-                className="bg-gray-5 border border-gray-20 w-[38px] h-[38px] rounded-full rotate-90 cursor-pointer"
-                onClick={handlePrev}>
-                <ArrowIcon />
-              </button>
-              <button
-                className="bg-gray-5 border border-gray-20 w-[38px] h-[38px] rounded-full -rotate-90  cursor-pointer"
-                onClick={handleNext}>
-                <ArrowIcon />
-              </button>
-            </div>
+            {isArray(surprisingOffersProducts?.products)?.map(
+              (product, key) => (
+                <SwiperSlide key={product?.id}>
+                  <SurprisingOfferCard product={product} />
+                </SwiperSlide>
+              ),
+            )}
           </Swiper>
+          <button
+            className="bg-gray-5 absolute ml-2 left-0 z-10 border flex items-center justify-center border-gray-20 w-[38px] h-[38px] rounded-full rotate-180  cursor-pointer"
+            onClick={handleNext}>
+            <ArrowIcon className="fill-gray-40" />
+          </button>
         </div>
       </div>
     </section>
