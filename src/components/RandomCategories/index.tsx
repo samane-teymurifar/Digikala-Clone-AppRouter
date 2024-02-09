@@ -15,7 +15,7 @@ function RandomCategories({data}: any) {
             {Keywords.BaseOnYourVisit}
           </span>
 
-          <div className="grid grid-cols-2 gap-[1px] mt-2 text-base">
+          <div className="grid grid-cols-2 gap-[1px] mt-2 text-base bg-gray-10">
             {isArray(item.products)
               .slice(0, 4)
               .map((subItem, index) => {
@@ -26,13 +26,14 @@ function RandomCategories({data}: any) {
                     width={130}
                     height={130}
                     key={`RandomCategories-subItem-${index}-${subItem.images.main}`}
+                    className='w-auto'
                   />
                 );
               })}
           </div>
           <div className="text-sm text-tertiary-main flex items-center justify-center mt-2">
             {Keywords.Visit}
-            <ArrowIcon className='fill-tertiary-main rotate-180' />
+            <ArrowIcon className="fill-tertiary-main rotate-180" />
           </div>
         </div>
       ))}

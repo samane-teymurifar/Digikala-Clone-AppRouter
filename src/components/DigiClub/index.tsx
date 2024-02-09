@@ -19,7 +19,8 @@ function DigiClub() {
         />
         <div className="flex gap-1">
           <div className="flex items-center gap-2">
-            <span>{Keywords.YourPoint}</span>
+            <span className='text-common-white text-base'>{Keywords.YourPoint}</span>
+            <span className='text-common-white'>153</span>
             <Image
               src={'https://www.digikala.com/statics/img/svg/club-point.svg'}
               width={24}

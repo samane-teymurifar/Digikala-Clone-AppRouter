@@ -14,11 +14,12 @@ function TopProducts({data, title}: any) {
               height={86}
               alt={item.title_fa}
             />
-            <div className="text-lg text-tertiaryTint-50 font-bold font2">
-              {++index}
-            </div>
-            <div className="text-xs text-gray-40 text-ellipsis  w-40 overflow-hidden whitespace-nowrap line-clamp-2">
-              {item.title_fa}
+
+            <div className="text-xs flex items-center  text-gray-40 text-ellipsis  w-40 overflow-hidden whitespace-nowrap line-clamp-2">
+              <div className="text-lg text-tertiaryTint-50 font-bold font2 pl-2">
+                {++index}
+              </div>
+              <span className='border-b border-gray-10 pb-8'>{item.title_fa}</span>
             </div>
           </div>
         ))}

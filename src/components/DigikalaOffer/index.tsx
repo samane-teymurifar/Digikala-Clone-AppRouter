@@ -1,4 +1,3 @@
-'use client';
 import {Keywords} from '@src/constants/keyword';
 import someJson from '../../data/HomeData/content';
 import {isArray} from '@src/utiles/helper/isArray';
@@ -20,7 +19,7 @@ function DigikalaOffer() {
             return (
               <div
                 className={`flex flex-col items-center ${
-                  index !== 6 && 'border-l'
+                  (index !== 6) && 'border-l'
                 } ${index <= 6 && 'border-b'}  border-gray-10 py-6`}>
                 <Image
                   src={DigikalaOfferCard.images.main}
