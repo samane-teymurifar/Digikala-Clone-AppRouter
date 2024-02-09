@@ -1,6 +1,6 @@
 import {Keywords} from '@src/constants/keyword';
 import {isArray} from '@src/utiles/helper/isArray';
-import SocialMedia from '../../../data';
+import {SocialMedia} from '../../../data';
 
 function FormSection() {
   return (
@@ -10,7 +10,6 @@ function FormSection() {
         {isArray(SocialMedia).map(socialMedia => socialMedia.icon)}
       </div>
       <div className="text-gray-70 text-base">{Keywords.emailRegister}</div>
-
       <form className="flex gap-2">
         <input
           type="email"

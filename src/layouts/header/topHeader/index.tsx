@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 function TopHeader() {
   return (
-    <div className="mx-[99px] flex py-3">
+    <div className="mx-[99px] flex py-3 mt-[60px]" id='header'>
       <div className="flex-grow flex gap-5">
         <Image
           width={115}

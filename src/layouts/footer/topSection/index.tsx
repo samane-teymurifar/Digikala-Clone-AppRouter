@@ -17,10 +17,10 @@ function TopSection() {
             height={30}
             alt=""
           />
-          <button className="flex items-center border border-gray-30 rounded-lg px-4 py-2">
+          <a className="flex items-center border border-gray-30 rounded-lg px-4 py-2" href='#header'>
             <span className="text-sm text-gray-30">{Keywords.goToTop}</span>
             <ArrowUPIcon className="fill-secondaryTint-60 pr-1" />
-          </button>
+          </a>
         </div>
         <div className="flex justify-start  gap-4 mt-5">
           <p className="text-gray-40 text-sm ">{Keywords.phoneSuport}</p>

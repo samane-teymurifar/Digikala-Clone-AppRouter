@@ -37,7 +37,7 @@ const FooterTopSectionData: footerDataType[] = [
 ];
 export default FooterTopSectionData;
 
-export const FooterInfo = [
+const FooterInfo = [
   {
     id: 0,
     CatTitle: 'با دیجی‌کالا',
@@ -114,7 +114,7 @@ export const FooterInfo = [
   },
 ];
 
-export const SocialMedia = [
+const SocialMedia = [
   {
     id: 0,
     icon: <InstagramIcon className="fill-secondaryTint-50" />,
@@ -128,3 +128,5 @@ export const SocialMedia = [
     icon: <LinkdinIcon className="fill-secondaryTint-50" />,
   },
 ];
+
+export {FooterInfo,SocialMedia}
