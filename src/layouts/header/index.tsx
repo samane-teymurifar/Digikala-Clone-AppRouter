@@ -4,7 +4,7 @@ import HeaderAdvertise from '@src/components/HeaderAdvertise';
 
 function Header() {
   return (
-    <header className="h-[180px] bg-common-white w-full flex flex-col shadow-md pb-50">
+    <header className="h-[181px] bg-common-white w-full flex flex-col shadow-md pb-50">
       <HeaderAdvertise/>
       <TopHeader />
       <NavBar />
