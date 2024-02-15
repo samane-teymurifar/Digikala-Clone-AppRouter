@@ -2,7 +2,7 @@ import SearchIcon from '@src/assets/icons/SearchIcon';
 import {Keywords} from '@src/constants/keyword';
 import Image from 'next/image';
 import DigiPlus from '@images/plus-widget.png';
-import ClacificationJson from '../../data/ClassificationData/classificationData';
+import ClacificationJson from '../../layouts/header/navBar/mega-menu/data';
 import {isArray} from '@src/utiles/helper/isArray';
 import LongArrowIcon from '@src/assets/icons/LongArrow';
 import FastDeliverIcon from '@src/assets/icons/fastDeliverIcon';
@@ -29,7 +29,7 @@ function Digiplus() {
               </div>
               <button className="text-sm text-common-white flex border border-common-white rounded-md w-fit py-2 px-3 gap-2">
                 <span>{Keywords.Membership}</span>
-                <LongArrowIcon className='fill-common-white' />
+                <LongArrowIcon className="fill-common-white" />
               </button>
             </div>
 
@@ -45,12 +45,12 @@ function Digiplus() {
         <div className="bg-common-white flex-grow m-4 rounded-md py-8 px-4">
           <div className="flex justify-between">
             <div className="flex">
-              <FastDeliverIcon className='fill-digiplusColor ml-2' />
+              <FastDeliverIcon className="fill-digiplusColor ml-2" />
               {Keywords.FreeDelivery}
             </div>
             <div className="flex items-center text-digiplusColor">
               {Keywords.seeAll}
-              <ArrowIcon className='fill-digiplusColor rotate-180' />
+              <ArrowIcon className="fill-digiplusColor rotate-180" />
             </div>
           </div>
           <div className="grid grid-cols-6 gap-y-2 h-full">

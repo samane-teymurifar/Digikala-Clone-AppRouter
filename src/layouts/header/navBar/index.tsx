@@ -2,18 +2,13 @@ import {Keywords} from '@constants/keyword';
 import {HeaderInfo} from './data';
 import {isArray} from '@src/utiles/helper/isArray';
 import LocationIcon from '@src/assets/icons/LocationIcon';
-import MenuIcon from '@src/assets/icons/MenuIcon';
+import MegaMenu from './mega-menu';
 
 function NavBar() {
   return (
     <div className="flex mx-[99px] items-center justify-between  mt-3">
       <span className="flex items-center">
-        <span className="ml-2">
-          <MenuIcon className="fill-secondaryTint-80" />
-        </span>
-        <span className="pl-2 text-sm text-gray-90">
-          {Keywords.productsClassification}
-        </span>
+        <MegaMenu/>
         <span className="h-5 w-[1px] bg-gray-10 mx-3" />
         <nav className="flex gap-6">
           {isArray(HeaderInfo).map((item, key) => (
