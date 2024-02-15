@@ -1,6 +1,6 @@
-import TopHeader from './topHeader';
+import TopHeader from './top-header';
 import NavBar from './navBar';
-import HeaderAdvertise from '@src/components/HeaderAdvertise';
+import HeaderAdvertise from '@src/components/header-advertise';
 
 function Header() {
   return (

@@ -3,7 +3,7 @@ import box from '@images/fresh.webp';
 import {Keywords} from '@src/constants/keyword';
 import SupermarketSurprisingData from './data';
 import {isArray} from '@src/utiles/helper/isArray';
-import SurprisingSupermarketCard from './SurprisingSupermarketCard';
+import SurprisingSupermarketCard from './surprising-supermarket-card';
 import {SupermarketSurprisingCardDataType} from './types';
 import SearchIcon from '@src/assets/icons/SearchIcon';
 import LongArrowIcon from '@src/assets/icons/LongArrow';

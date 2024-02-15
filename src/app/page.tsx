@@ -1,13 +1,13 @@
-import BazarcheCards from '@src/components/Bazarche';
-import AdsComponent from '@src/components/AdsComponent';
-import BottomStories from '@src/components/BottomStory';
-import Clacification from '@src/components/Clacification';
-import DigikalaOffer from '@src/components/DigikalaOffer';
-import PopularBrands from '@src/components/PopularBrands';
-import SurprisingSupermarket from '@src/components/SupermarketSurprising';
-import SurprisingOffer from '@src/components/SurprisingOffer';
-import SwiperComponent from '@src/components/SwiperBanner';
-// import TopStories from '@src/components/TopStory';
+import BazarcheCards from '@src/components/bazarche';
+import AdsComponent from '@src/components/ads-component';
+import BottomStories from '@src/components/bottom-story';
+import Clacification from '@src/components/clacification';
+import DigikalaOffer from '@src/components/digikala-offer';
+import PopularBrands from '@src/components/popular-brands';
+import SurprisingSupermarket from '@src/components/supermarket-surprising';
+import SurprisingOffer from '@src/components/surprising-offer';
+import SwiperComponent from '@src/components/swiper-banner';
+import TopStories from '@src/components/top-story';
 import {AdsData} from '@src/data/data';
 import {SecondAdsData} from '@src/data/data';
 import {RandomCategoriesData} from '@src/data/data';
@@ -15,17 +15,17 @@ import {SecondRandomCategoriesData} from '@src/data/data';
 import {BestSellerData, BestSellerDataTitle} from '@src/data/data';
 import {TerendingData, TerendingDataTitle} from '@src/data/data';
 import {ArticlesData} from '@src/data/data';
-import RandomCategories from '@src/components/RandomCategories';
-import Digiplus from '@src/components/DigiPlus';
-import DigiClub from '@src/components/DigiClub';
-import TopProducts from '@src/components/TopProducts';
-import SellingAndSales from '@src/components/SellingAndSales';
-import Articles from '@src/components/Articles';
+import RandomCategories from '@src/components/random-categories';
+import Digiplus from '@src/components/digiPlus';
+import DigiClub from '@src/components/digiclub';
+import TopProducts from '@src/components/top-products';
+import SellingAndSales from '@src/components/selling-and-sales';
+import Articles from '@src/components/articles';
 
 export default function Home() {
   return (
     <main className="mt-[112px]">
-      {/* <TopStories/> */}
+      <TopStories />
       <SwiperComponent />
       <BottomStories />
       <SurprisingOffer />

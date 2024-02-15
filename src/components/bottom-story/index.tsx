@@ -1,5 +1,5 @@
 import BottomStoryData from './data';
-import BotomStoryItem from './BottomStoryItem/index';
+import BotomStoryItem from './bottom-story-Item/index';
 import {isArray} from '@src/utiles/helper/isArray';
 
 function BottomStories() {

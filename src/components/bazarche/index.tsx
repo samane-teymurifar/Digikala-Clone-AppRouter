@@ -1,6 +1,6 @@
 import {isArray} from '@src/utiles/helper/isArray';
 import BazarcheData from './data';
-import BazarcheCard from './BazarcheCard';
+import BazarcheCard from './abzarche-card';
 
 function BazarcheCards() {
   return (
