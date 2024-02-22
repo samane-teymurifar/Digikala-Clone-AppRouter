@@ -1,4 +1,4 @@
-import ClacificationJson from '../../layouts/header/navBar/mega-menu/data';
+import ClacificationJson from '../../layouts/header/data';
 import {isArray} from '@src/utiles/helper/isArray';
 import {Keywords} from '@src/constants/keyword';
 import {CategoryType} from './types';

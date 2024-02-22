@@ -21,11 +21,12 @@ import DigiClub from '@src/components/digiclub';
 import TopProducts from '@src/components/top-products';
 import SellingAndSales from '@src/components/selling-and-sales';
 import Articles from '@src/components/articles';
+import MegaMenu from '@src/layouts/header/navBar/mega-menu';
 
 export default function Home() {
   return (
     <main className="mt-[112px]">
-      <TopStories />
+      {/* <TopStories /> */}
       <SwiperComponent />
       <BottomStories />
       <SurprisingOffer />
@@ -44,6 +45,7 @@ export default function Home() {
       <SellingAndSales />
       <TopProducts data={TerendingData} title={TerendingDataTitle} />
       <Articles data={ArticlesData} />
+      <MegaMenu/>
     </main>
   );
 }

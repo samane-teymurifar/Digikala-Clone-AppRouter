@@ -2,7 +2,7 @@ import SearchIcon from '@src/assets/icons/SearchIcon';
 import {Keywords} from '@src/constants/keyword';
 import Image from 'next/image';
 import DigiPlus from '@images/plus-widget.png';
-import ClacificationJson from '../../layouts/header/navBar/mega-menu/data';
+import ClacificationJson from '../../layouts/header/data';
 import {isArray} from '@src/utiles/helper/isArray';
 import LongArrowIcon from '@src/assets/icons/LongArrow';
 import FastDeliverIcon from '@src/assets/icons/fastDeliverIcon';

@@ -1,4 +1,4 @@
-{
+export const someJson = {
   "status": 200,
   "result": {
     "widgets": [
@@ -6,7 +6,6 @@
         "type": "category_child_view",
         "data": {
           "title": "موبایل",
-          "icon": "http://localhost:3000/icons/next.svg",
           "child": [
             {
               "id": 11,

@@ -4,11 +4,11 @@ import {isArray} from '@src/utiles/helper/isArray';
 import LocationIcon from '@src/assets/icons/LocationIcon';
 import MegaMenu from './mega-menu';
 
-function NavBar() {
+function NavBar({clasificationList}: any) {
   return (
     <div className="flex mx-[99px] items-center justify-between  mt-3">
       <span className="flex items-center">
-        <MegaMenu/>
+        <MegaMenu clasificationList={clasificationList} />
         <span className="h-5 w-[1px] bg-gray-10 mx-3" />
         <nav className="flex gap-6">
           {isArray(HeaderInfo).map((item, key) => (
