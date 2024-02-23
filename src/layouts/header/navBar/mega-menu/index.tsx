@@ -7,7 +7,6 @@ import {someJson} from '../../data-json';
 
 async function MegaMenu({clasificationList}: any) {
   const clasificationListSecond = someJson.result.widgets;
-  console.log(clasificationListSecond);
 
   return (
     <>
@@ -19,7 +18,7 @@ async function MegaMenu({clasificationList}: any) {
           {isArray(clasificationListSecond)
             .slice(0, 12)
             .map(cluster => (
-              <div className='flex'>
+              <div className="flex">
                 <div className="flex items-center w-[25%]">
                   <Link
                     href={''}
@@ -27,9 +26,9 @@ async function MegaMenu({clasificationList}: any) {
                     {cluster.data.title}
                   </Link>
                 </div>
-                <div className='border w-[75%]'>
+                <div className="border w-[75%]">
                   {cluster?.data?.child?.map((item: any) => {
-                    return <div className='text-gray-90'>{item?.title_fa}</div>;
+                    return <div className="text-gray-90">{item?.title_fa}</div>;
                   })}
                 </div>
               </div>

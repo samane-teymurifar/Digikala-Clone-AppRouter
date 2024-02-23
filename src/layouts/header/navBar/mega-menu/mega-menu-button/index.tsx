@@ -5,13 +5,9 @@ import React from 'react';
 
 function MegaMenuButton() {
   const openMegaMenue = () => {
-    console.log("openMegaMenue");
-    
     document.getElementById('mega-menue')?.classList.remove('hidden');
   };
   const closeMegaMenue = () => {
-    console.log("closeMegaMenue");
-
     document.getElementById('mega-menue')?.classList.add('hidden');
   };
 

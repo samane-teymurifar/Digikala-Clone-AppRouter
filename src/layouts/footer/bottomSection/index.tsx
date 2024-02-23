@@ -15,7 +15,7 @@ function BottomFooter() {
             <Link
               key={`BottomFooter-Item-${key}`}
               href={item.href}
-              className="px-5 grow w-[12%] flex justify-center items-center flex-col h-20">
+              className="px-5 flex flex-auto justify-center min-w-[10%] items-center flex-col h-20 border-r border-b border-gray-20">
               <img src={item.src} height="20" alt={item.alt} />
             </Link>
           ))}
