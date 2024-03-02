@@ -29,3 +29,10 @@ body {
   height: 4px;
   transition: ease-in-out 0.2s;
 }
+
+.categoryItem div{
+  display: none;
+}
+.categoryItem:hover div{
+  width: 70%
+}
