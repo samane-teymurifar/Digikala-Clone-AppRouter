@@ -22,7 +22,7 @@ function Articles({data}: any) {
               src={item.src}
               fill
               alt={item.title}
-              className="!relative rounded-t-lg min-h-[200px]"
+              className="!relative rounded-t-[0.4rem] min-h-[200px]"
             />
             <div className="relative bottom-0 p-4 text-xs text-gray-90 h-16">
               {item.title}
